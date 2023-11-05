@@ -1,3 +1,19 @@
+## 	Technologies
+
+The project incorporates a range of technologies to deliver its functionality:
+
+:small_blue_diamond:__Language:__ The project is primarily developed using C#, a powerful and versatile programming language.
+
+:small_blue_diamond:**Framework:** It leverages the .NET 7 framework, which offers a comprehensive set of tools and libraries for developing modern and scalable applications.
+
+:small_blue_diamond:**Architecture:** The project follows the Clean Architecture principles, promoting separation of concerns and maintainability through clear architectural layers.
+
+:small_blue_diamond:**Database:** The project integrates with Entity Framework Core for database operations. It utilizes SQL Server as the underlying database engine.
+
+:small_blue_diamond:**CQRS:** The project implements the CQRS (Command Query Responsibility Segregation) pattern using MediatR, enabling a clear separation of commands and queries for improved code organization and scalability.
+
+:small_blue_diamond:**[ASP.NET](http://asp.net/) 7 with Entity Framework Core:** The project utilizes the latest version of ASP.NET 7 and integrates it seamlessly with Entity Framework Core for efficient web development and data access.
+
 ## Getting Started
 
 ### React
