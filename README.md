@@ -14,6 +14,8 @@ The project incorporates a range of technologies to deliver its functionality:
 
 :small_blue_diamond:**[ASP.NET](http://asp.net/) 7 with Entity Framework Core:** The project utilizes the latest version of ASP.NET 7 and integrates it seamlessly with Entity Framework Core for efficient web development and data access.
 
+
+
 ## Getting Started
 
 ### React
