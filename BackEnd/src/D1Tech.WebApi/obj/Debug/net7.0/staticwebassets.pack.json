@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/Levent/Desktop/_caseD1/BackEnd/src/D1Tech.WebApi/wwwroot/email_templates/email_confirmation.html",
+      "PackagePath": "staticwebassets/email_templates/email_confirmation.html"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.D1Tech.WebApi.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.build.D1Tech.WebApi.props",
+      "PackagePath": "build\\D1Tech.WebApi.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.D1Tech.WebApi.props",
+      "PackagePath": "buildMultiTargeting\\D1Tech.WebApi.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.D1Tech.WebApi.props",
+      "PackagePath": "buildTransitive\\D1Tech.WebApi.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

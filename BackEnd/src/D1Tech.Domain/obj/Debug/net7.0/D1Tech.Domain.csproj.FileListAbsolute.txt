@@ -1,0 +1,12 @@
+/Users/Levent/Desktop/_caseD1/BackEnd/src/D1Tech.Domain/bin/Debug/net7.0/D1Tech.Domain.deps.json
+/Users/Levent/Desktop/_caseD1/BackEnd/src/D1Tech.Domain/bin/Debug/net7.0/D1Tech.Domain.dll
+/Users/Levent/Desktop/_caseD1/BackEnd/src/D1Tech.Domain/bin/Debug/net7.0/D1Tech.Domain.pdb
+/Users/Levent/Desktop/_caseD1/BackEnd/src/D1Tech.Domain/obj/Debug/net7.0/D1Tech.Domain.csproj.AssemblyReference.cache
+/Users/Levent/Desktop/_caseD1/BackEnd/src/D1Tech.Domain/obj/Debug/net7.0/D1Tech.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/Levent/Desktop/_caseD1/BackEnd/src/D1Tech.Domain/obj/Debug/net7.0/D1Tech.Domain.AssemblyInfoInputs.cache
+/Users/Levent/Desktop/_caseD1/BackEnd/src/D1Tech.Domain/obj/Debug/net7.0/D1Tech.Domain.AssemblyInfo.cs
+/Users/Levent/Desktop/_caseD1/BackEnd/src/D1Tech.Domain/obj/Debug/net7.0/D1Tech.Domain.csproj.CoreCompileInputs.cache
+/Users/Levent/Desktop/_caseD1/BackEnd/src/D1Tech.Domain/obj/Debug/net7.0/D1Tech.Domain.dll
+/Users/Levent/Desktop/_caseD1/BackEnd/src/D1Tech.Domain/obj/Debug/net7.0/refint/D1Tech.Domain.dll
+/Users/Levent/Desktop/_caseD1/BackEnd/src/D1Tech.Domain/obj/Debug/net7.0/D1Tech.Domain.pdb
+/Users/Levent/Desktop/_caseD1/BackEnd/src/D1Tech.Domain/obj/Debug/net7.0/ref/D1Tech.Domain.dll

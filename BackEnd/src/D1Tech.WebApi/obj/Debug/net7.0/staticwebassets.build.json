@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "bkiWPpwwsOrfGL3PrRVB3yTBzsRR6vk/lQvlQhGa0kc=",
+  "Source": "D1Tech.WebApi",
+  "BasePath": "_content/D1Tech.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "D1Tech.WebApi/wwwroot",
+      "Source": "D1Tech.WebApi",
+      "ContentRoot": "/Users/Levent/Desktop/_caseD1/BackEnd/src/D1Tech.WebApi/wwwroot/",
+      "BasePath": "_content/D1Tech.WebApi",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/Levent/Desktop/_caseD1/BackEnd/src/D1Tech.WebApi/wwwroot/email_templates/email_confirmation.html",
+      "SourceId": "D1Tech.WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/Levent/Desktop/_caseD1/BackEnd/src/D1Tech.WebApi/wwwroot/",
+      "BasePath": "_content/D1Tech.WebApi",
+      "RelativePath": "email_templates/email_confirmation.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/email_templates/email_confirmation.html"
+    }
+  ]
+}
