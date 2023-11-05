@@ -14,6 +14,9 @@ The project incorporates a range of technologies to deliver its functionality:
 
 :small_blue_diamond:**[ASP.NET](http://asp.net/) 7 with Entity Framework Core:** The project utilizes the latest version of ASP.NET 7 and integrates it seamlessly with Entity Framework Core for efficient web development and data access.
 
+:small_blue_diamond:**Front-End:** React is utilized as the front-end library, enabling the creation of a responsive and interactive user interface. Its component-based architecture allows for efficient rendering and state management across the application.
+
+:small_blue_diamond:**Authentication:** The project incorporates Google Login for authentication, leveraging the widely-used OAuth 2.0 protocol to provide a secure and convenient sign-in process for users. 
 
 
 ## Getting Started
