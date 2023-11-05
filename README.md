@@ -18,6 +18,12 @@ The project incorporates a range of technologies to deliver its functionality:
 
 :small_blue_diamond:**Authentication:** The project incorporates Google Login for authentication, leveraging the widely-used OAuth 2.0 protocol to provide a secure and convenient sign-in process for users. 
 
+:small_blue_diamond:**Logging:** The project integrates Serilog, a high-performance diagnostic logging library. Serilog enables detailed and structured logging, greatly enhancing the monitoring and debugging capabilities of the application.
+
+:small_blue_diamond:**Validation:** The project utilizes FluentValidation for robust and expressive validation rules, ensuring that data integrity and business rules are consistently enforced throughout the application.
+
+
+
 
 ## Getting Started
 
