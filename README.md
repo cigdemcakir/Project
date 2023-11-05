@@ -1,5 +1,7 @@
 ## 	Technologies
 
+### Current Technologies
+
 The project incorporates a range of technologies to deliver its functionality:
 
 :small_blue_diamond:__Language:__ The project is primarily developed using C#, a powerful and versatile programming language.
@@ -22,10 +24,29 @@ The project incorporates a range of technologies to deliver its functionality:
 
 :small_blue_diamond:**Validation:** The project utilizes FluentValidation for robust and expressive validation rules, ensuring that data integrity and business rules are consistently enforced throughout the application.
 
+:small_blue_diamond:**Axios:** Utilized for making HTTP requests to external services and APIs.
 
+:small_blue_diamond:**JWT-Decode:** This library is employed to decode JSON Web Tokens.
 
+:small_blue_diamond:**React Toastify:** It provides a smooth and easily customizable toast notification system.
 
-## Getting Started
+:small_blue_diamond:**Semantic UI React:** It provides intuitive and responsive interface components.
+
+<br>
+
+### Technologies Under Development
+
+The project is in an advanced stage of development with most features already implemented in code and currently testing:
+
+:small_blue_diamond:**Email Communications:** Exploring integration with .NET Mail for sending essential notifications and marketing communications.
+
+:small_blue_diamond:**Two-Factor Authentication:** OTP.NET and QrCoder are being tested for robust 2FA to enhance account security.
+
+:small_blue_diamond:**Real-Time Interactions:** SignalR is in development for instant user notifications, providing an interactive and personalized user experience.
+
+<br>
+
+## :triangular_flag_on_post: Getting Started
 
 ### React
 
