@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "7cqljd/q+23HYFd4WoDOt6ugRpIeNqZHLuQcYz1nB90=",
+  "Source": "ECommerce.WebApi",
+  "BasePath": "_content/ECommerce.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ECommerce.WebApi/wwwroot",
+      "Source": "ECommerce.WebApi",
+      "ContentRoot": "/Users/Levent/Desktop/Project/BackEnd/src/ECommerce.WebApi/wwwroot/",
+      "BasePath": "_content/ECommerce.WebApi",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "/Users/Levent/Desktop/Project/BackEnd/src/ECommerce.WebApi/wwwroot/email_templates/email_confirmation.html",
+      "SourceId": "ECommerce.WebApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/Levent/Desktop/Project/BackEnd/src/ECommerce.WebApi/wwwroot/",
+      "BasePath": "_content/ECommerce.WebApi",
+      "RelativePath": "email_templates/email_confirmation.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/email_templates/email_confirmation.html"
+    }
+  ]
+}

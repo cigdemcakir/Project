@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/Levent/Desktop/_caseD1/BackEnd/tests/Application.IntegrationTests/Application.IntegrationTests.csproj": {}
+    "/Users/Levent/Desktop/Project/BackEnd/tests/Application.IntegrationTests/Application.IntegrationTests.csproj": {}
   },
   "projects": {
-    "/Users/Levent/Desktop/_caseD1/BackEnd/tests/Application.IntegrationTests/Application.IntegrationTests.csproj": {
+    "/Users/Levent/Desktop/Project/BackEnd/tests/Application.IntegrationTests/Application.IntegrationTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/Levent/Desktop/_caseD1/BackEnd/tests/Application.IntegrationTests/Application.IntegrationTests.csproj",
+        "projectUniqueName": "/Users/Levent/Desktop/Project/BackEnd/tests/Application.IntegrationTests/Application.IntegrationTests.csproj",
         "projectName": "Application.IntegrationTests",
-        "projectPath": "/Users/Levent/Desktop/_caseD1/BackEnd/tests/Application.IntegrationTests/Application.IntegrationTests.csproj",
+        "projectPath": "/Users/Levent/Desktop/Project/BackEnd/tests/Application.IntegrationTests/Application.IntegrationTests.csproj",
         "packagesPath": "/Users/Levent/.nuget/packages/",
-        "outputPath": "/Users/Levent/Desktop/_caseD1/BackEnd/tests/Application.IntegrationTests/obj/",
+        "outputPath": "/Users/Levent/Desktop/Project/BackEnd/tests/Application.IntegrationTests/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/Levent/.nuget/NuGet/NuGet.Config"

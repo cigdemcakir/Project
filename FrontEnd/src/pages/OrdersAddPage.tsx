@@ -5,10 +5,13 @@ import { OrderAddCommand } from "../types/OrderTypes.ts";
 import {ApiResponse} from "../types/GenericTypes.ts";
 import {HubConnection, HubConnectionBuilder} from "@microsoft/signalr";
 import {LocalJwt} from "../types/AuthTypes.ts";
+import axios from "axios";
 
 const BASE_SIGNALR_URL = import.meta.env.VITE_API_SIGNALR_URL;
 
 function AddOrderPage() {
+
+    const [userId, setUserId] = useState(null);
 
     const [accountHubConnection,setAccountHubConnection] = useState<HubConnection | undefined>(undefined);
 
@@ -22,6 +25,8 @@ function AddOrderPage() {
             if(jwtJson){
 
                 const localJwt:LocalJwt =JSON.parse(jwtJson);
+
+                setUserId(localJwt.userId);
 
                 const connection = new HubConnectionBuilder()
                     .withUrl(`${BASE_SIGNALR_URL}Hubs/AccountHub?access_token=${localJwt.accessToken}`)
@@ -42,6 +47,7 @@ function AddOrderPage() {
 
     },[])
 
+
     const [order, setOrder] = useState<OrderAddCommand>({
         title: '',
         userName: '',
@@ -57,6 +63,19 @@ function AddOrderPage() {
         console.log(accountId)
 
     }
+
+    useEffect(() => {
+        const fetchBooks = async () => {
+            try {
+                const response = await axios.get(`https://localhost:7109/api/Order/Get/${userId}`);
+                setOrders(response.data);
+            } catch (error) {
+                console.error('An error occured.', error);
+            }
+        };
+
+        fetchBooks();
+    }, []);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setOrder({

@@ -28,7 +28,7 @@ const NavBar = () => {
             <Container>
                 <Menu.Item as='a' header>
                     <Image size='mini' src='/vite.svg' style={{ marginRight: '1.5em' }} />
-                    D1 Tech
+                    Tech
                 </Menu.Item>
                 <Menu.Item as={NavLink} to="/">Home</Menu.Item>
                 <Menu.Item as={NavLink} to="/orders">Orders</Menu.Item>

@@ -2215,11 +2215,11 @@
           "build/netcoreapp3.1/xunit.runner.visualstudio.props": {}
         }
       },
-      "D1Tech.Application/1.0.0": {
+      "ECommerce.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "D1Tech.Domain": "1.0.0",
+          "ECommerce.Domain": "1.0.0",
           "FluentValidation": "11.5.2",
           "FluentValidation.DependencyInjectionExtensions": "11.5.2",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.4",
@@ -2227,13 +2227,13 @@
           "Microsoft.Extensions.Localization": "7.0.5"
         },
         "compile": {
-          "bin/placeholder/D1Tech.Application.dll": {}
+          "bin/placeholder/ECommerce.Application.dll": {}
         },
         "runtime": {
-          "bin/placeholder/D1Tech.Application.dll": {}
+          "bin/placeholder/ECommerce.Application.dll": {}
         }
       },
-      "D1Tech.Domain/1.0.0": {
+      "ECommerce.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
@@ -2241,10 +2241,10 @@
           "Microsoft.Extensions.Identity.Stores": "7.0.4"
         },
         "compile": {
-          "bin/placeholder/D1Tech.Domain.dll": {}
+          "bin/placeholder/ECommerce.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/D1Tech.Domain.dll": {}
+          "bin/placeholder/ECommerce.Domain.dll": {}
         }
       }
     }
@@ -7092,20 +7092,20 @@
         "xunit.runner.visualstudio.nuspec"
       ]
     },
-    "D1Tech.Application/1.0.0": {
+    "ECommerce.Application/1.0.0": {
       "type": "project",
-      "path": "../../src/D1Tech.Application/D1Tech.Application.csproj",
-      "msbuildProject": "../../src/D1Tech.Application/D1Tech.Application.csproj"
+      "path": "../../src/ECommerce.Application/ECommerce.Application.csproj",
+      "msbuildProject": "../../src/ECommerce.Application/ECommerce.Application.csproj"
     },
-    "D1Tech.Domain/1.0.0": {
+    "ECommerce.Domain/1.0.0": {
       "type": "project",
-      "path": "../../src/D1Tech.Domain/D1Tech.Domain.csproj",
-      "msbuildProject": "../../src/D1Tech.Domain/D1Tech.Domain.csproj"
+      "path": "../../src/ECommerce.Domain/ECommerce.Domain.csproj",
+      "msbuildProject": "../../src/ECommerce.Domain/ECommerce.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "D1Tech.Application >= 1.0.0",
+      "ECommerce.Application >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.3.2",
       "coverlet.collector >= 3.1.2",
       "xunit >= 2.4.2",
@@ -7118,11 +7118,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/Levent/Desktop/_caseD1/BackEnd/tests/Application.UnitTests/Application.UnitTests.csproj",
+      "projectUniqueName": "/Users/Levent/Desktop/Project/BackEnd/tests/Application.UnitTests/Application.UnitTests.csproj",
       "projectName": "Application.UnitTests",
-      "projectPath": "/Users/Levent/Desktop/_caseD1/BackEnd/tests/Application.UnitTests/Application.UnitTests.csproj",
+      "projectPath": "/Users/Levent/Desktop/Project/BackEnd/tests/Application.UnitTests/Application.UnitTests.csproj",
       "packagesPath": "/Users/Levent/.nuget/packages/",
-      "outputPath": "/Users/Levent/Desktop/_caseD1/BackEnd/tests/Application.UnitTests/obj/",
+      "outputPath": "/Users/Levent/Desktop/Project/BackEnd/tests/Application.UnitTests/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/Levent/.nuget/NuGet/NuGet.Config"
@@ -7137,8 +7137,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "/Users/Levent/Desktop/_caseD1/BackEnd/src/D1Tech.Application/D1Tech.Application.csproj": {
-              "projectPath": "/Users/Levent/Desktop/_caseD1/BackEnd/src/D1Tech.Application/D1Tech.Application.csproj"
+            "/Users/Levent/Desktop/Project/BackEnd/src/ECommerce.Application/ECommerce.Application.csproj": {
+              "projectPath": "/Users/Levent/Desktop/Project/BackEnd/src/ECommerce.Application/ECommerce.Application.csproj"
             }
           }
         }

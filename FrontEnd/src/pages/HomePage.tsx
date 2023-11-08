@@ -11,14 +11,6 @@ function HomePage() {
         navigate("/orders/add");
     }
 
-    const onSearchInputChange = () => {
-        console.log('Search input changed');
-    }
-
-    const onSelectChange = () => {
-        console.log('Select option changed');
-    }
-
     return (
         <>
 

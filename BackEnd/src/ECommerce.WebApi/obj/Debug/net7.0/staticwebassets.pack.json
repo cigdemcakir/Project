@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/Levent/Desktop/Project/BackEnd/src/ECommerce.WebApi/wwwroot/email_templates/email_confirmation.html",
+      "PackagePath": "staticwebassets/email_templates/email_confirmation.html"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.ECommerce.WebApi.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.build.ECommerce.WebApi.props",
+      "PackagePath": "build\\ECommerce.WebApi.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.ECommerce.WebApi.props",
+      "PackagePath": "buildMultiTargeting\\ECommerce.WebApi.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.ECommerce.WebApi.props",
+      "PackagePath": "buildTransitive\\ECommerce.WebApi.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
