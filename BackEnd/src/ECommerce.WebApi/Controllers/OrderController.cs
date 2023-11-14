@@ -1,4 +1,4 @@
-﻿using Application.Features.Orders.Commands.Add;
+﻿using Application.Features.Orders.Commands.CreateOrder;
 using Application.Features.Orders.Queries.GetAll;
 using Microsoft.AspNetCore.Mvc;
 
@@ -13,9 +13,9 @@ namespace WebApi.Controllers
         }
 
         [HttpGet("Get")]
-        public async Task<IActionResult> GetAllAsync(Guid userId)
+        public async Task<IActionResult> GetAllAsync()
         {
-            var query = new OrderGetAllQuery(userId);
+            var query = new OrderGetAllQuery();
             return Ok(await Mediator.Send(query));
         }
     }

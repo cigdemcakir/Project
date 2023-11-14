@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "Application.UnitTests/1.0.0": {
         "dependencies": {
-          "D1Tech.Application": "1.0.0",
+          "ECommerce.Application": "1.0.0",
           "Microsoft.NET.Test.Sdk": "17.3.2",
           "coverlet.collector": "3.1.2",
           "xunit": "2.4.2",
@@ -1343,9 +1343,9 @@
         }
       },
       "xunit.runner.visualstudio/2.4.5": {},
-      "D1Tech.Application/1.0.0": {
+      "ECommerce.Application/1.0.0": {
         "dependencies": {
-          "D1Tech.Domain": "1.0.0",
+          "ECommerce.Domain": "1.0.0",
           "FluentValidation": "11.5.2",
           "FluentValidation.DependencyInjectionExtensions": "11.5.2",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "7.0.4",
@@ -1353,24 +1353,24 @@
           "Microsoft.Extensions.Localization": "7.0.5"
         },
         "runtime": {
-          "D1Tech.Application.dll": {}
+          "ECommerce.Application.dll": {}
         },
         "resources": {
-          "tr-TR/D1Tech.Application.resources.dll": {
+          "tr-TR/ECommerce.Application.resources.dll": {
             "locale": "tr-TR"
           },
-          "en-GB/D1Tech.Application.resources.dll": {
+          "en-GB/ECommerce.Application.resources.dll": {
             "locale": "en-GB"
           }
         }
       },
-      "D1Tech.Domain/1.0.0": {
+      "ECommerce.Domain/1.0.0": {
         "dependencies": {
           "MediatR": "12.0.1",
           "Microsoft.Extensions.Identity.Stores": "7.0.4"
         },
         "runtime": {
-          "D1Tech.Domain.dll": {}
+          "ECommerce.Domain.dll": {}
         }
       }
     }
@@ -2193,12 +2193,12 @@
       "path": "xunit.runner.visualstudio/2.4.5",
       "hashPath": "xunit.runner.visualstudio.2.4.5.nupkg.sha512"
     },
-    "D1Tech.Application/1.0.0": {
+    "ECommerce.Application/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "D1Tech.Domain/1.0.0": {
+    "ECommerce.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

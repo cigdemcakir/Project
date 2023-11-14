@@ -2,6 +2,6 @@
 {
     public interface IOrderHubService
     {
-        Task AddedAsync(Guid id, CancellationToken cancellationToken);
+        Task AddProduct(Guid id, CancellationToken cancellationToken);
     }
 }

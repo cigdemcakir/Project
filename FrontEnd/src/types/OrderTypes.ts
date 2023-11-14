@@ -22,4 +22,14 @@ export type OrderAddCommand = {
     isFavourite: boolean;
     categoryIds: string[];
 }
+export interface Order {
+    id: string;
+    title: string;
+    author: string;
+    imageUrl: string;
+    genre: string
+    isAvailable: boolean;
+    loanedOutTo?: string;
+    dueDate?: string;
+}
 

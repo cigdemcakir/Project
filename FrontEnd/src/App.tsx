@@ -3,7 +3,6 @@ import NavBar from './components/NavBar.tsx';
 import {ToastContainer} from 'react-toastify';
 import {Container} from "semantic-ui-react";
 import {Route, Routes} from "react-router-dom";
-import HomePage from "./pages/HomePage.tsx";
 import {useEffect, useState} from "react";
 import {OrderGetAllDto} from "./types/OrderTypes.ts";
 import {LocalJwt, LocalUser} from "./types/AuthTypes.ts";
@@ -16,6 +15,10 @@ import ProtectedRoute from "./components/ProtectedRoute.tsx";
 import OrdersAddPage from "./pages/OrdersAddPage.tsx";
 import SocialLogin from "./pages/SocialLogin.tsx";
 import OrdersPage from "./pages/OrdersPage.tsx";
+import AboutPage from "./pages/AboutPage.tsx";
+import ProductsPage from "./pages/ProductsPage.tsx";
+import CartPage from "./pages/CartPage.tsx";
+import {CartProvider} from "./context/CartContex.tsx";
 
 function App() {
 
@@ -57,18 +60,29 @@ function App() {
         <>
             <AppUserContext.Provider value={{appUser, setAppUser}}>
                 <OrdersContext.Provider value={{orders, setOrders}}>
+                    <CartProvider>
                     <ToastContainer/>
                     <NavBar />
                     <Container className="App">
                         <Routes>
                             <Route path="/" element={
                                 <ProtectedRoute>
-                                    <HomePage/>
+                                    <ProductsPage />
                                 </ProtectedRoute>
                             }/>
                             <Route path="/orders" element={
                                 <ProtectedRoute>
                                     <OrdersPage />
+                                </ProtectedRoute>
+                            }/>
+                            <Route path="/about" element={
+                                <ProtectedRoute>
+                                    <AboutPage />
+                                </ProtectedRoute>
+                            }/>
+                            <Route path="/cart" element={
+                                <ProtectedRoute>
+                                    <CartPage />
                                 </ProtectedRoute>
                             }/>
                             <Route path="/orders/add" element={
@@ -80,6 +94,7 @@ function App() {
                             <Route path="/social-login" element={<SocialLogin/>}/>
                         </Routes>
                     </Container>
+                    </CartProvider>
                 </OrdersContext.Provider>
             </AppUserContext.Provider>
         </>

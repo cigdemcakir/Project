@@ -30,7 +30,7 @@ function SocialLogin() {
             expires
         }
 
-        localStorage.setItem("d1tech_user",JSON.stringify(localJwt));
+        localStorage.setItem("ecommerce_user",JSON.stringify(localJwt));
 
         navigate("/");
 

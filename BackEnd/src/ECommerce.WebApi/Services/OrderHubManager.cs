@@ -13,9 +13,10 @@ namespace WebApi.Services
             _hubContext = hubContext;
         }
 
-        public Task AddedAsync(Guid id, CancellationToken cancellationToken)
+        public Task AddProduct(Guid id, CancellationToken cancellationToken)
         {
-            return  _hubContext.Clients.All.SendAsync("Added", id, cancellationToken);
+            return  _hubContext.Clients.All.SendAsync("AddProduct", id, cancellationToken);
         }
+
     }
 }

@@ -9,10 +9,10 @@ namespace Application.Features.Orders.Queries.GetAll
 {
     public class OrderGetAllDto
     {
-        public Guid OrderId { get; set; } 
-        public DateTime OrderDate { get; set; }
+        public Guid UserId { get; set; } 
+        public DateTimeOffset OrderDate { get; set; }
         
-        public List<OrderItem> OrderItems { get; set; } 
+        public List<Product> Products { get; set; } 
         
     }
 }

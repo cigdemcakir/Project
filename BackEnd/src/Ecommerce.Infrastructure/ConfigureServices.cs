@@ -21,8 +21,7 @@ namespace Infrastructure
             services.AddDbContext<IdentityContext>(options =>
                 options.UseSqlServer(
                     configuration.GetConnectionString("SqlServer")));
-
-
+            
 
             // DbContext
 

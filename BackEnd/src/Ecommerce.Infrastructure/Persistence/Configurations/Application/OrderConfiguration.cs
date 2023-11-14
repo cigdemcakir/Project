@@ -14,19 +14,17 @@ public class OrderConfiguration:IEntityTypeConfiguration<Order>
         // UserId
         builder.Property(x => x.UserId).IsRequired();
         
+        // OrderDate
+        builder.Property(x => x.OrderDate).IsRequired();
+        
         // Common Fields
 
         // CreatedOn
         builder.Property(x => x.CreatedOn).IsRequired();
 
-        // ModifiedOn
-        builder.Property(x => x.ModifiedOn).IsRequired(false);
-
         // Relationships 
-        builder.HasMany(x => x.OrderItems)
-            .WithOne(x => x.Order)
-            .HasForeignKey(x => x.OrderId)
-            .OnDelete(DeleteBehavior.Cascade);
+        builder.HasMany(x => x.Products)
+            .WithMany(x => x.Orders);
         
         builder.ToTable("Orders");
     }

@@ -2,14 +2,8 @@
 using Domain.Common;
 using Domain.Entities;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
 
-namespace Application.Features.Orders.Commands.Add
+namespace Application.Features.Orders.Commands.CreateOrder
 {
     public class OrderAddCommandHandler : IRequestHandler<OrderAddCommand, Response<Guid>>
     {
@@ -22,12 +16,22 @@ namespace Application.Features.Orders.Commands.Add
 
         public async Task<Response<Guid>> Handle(OrderAddCommand request, CancellationToken cancellationToken)
         {
-            var order = new Order()
+            var order = new Order
             {
+                Id = Guid.NewGuid(),
                 UserId = request.UserId,
-                OrderDate = request.OrderDate,
-                //OrderItems = request.OrderItems
+                OrderDate = DateTimeOffset.Now,
+                Products = new List<Product>()
             };
+            
+            foreach (var productId in request.ProductIds)
+            {
+                var product = await _applicationDbContext.Products.FindAsync(productId);
+                if (product != null)
+                {
+                    order.Products.Add(product);
+                }
+            }
 
             await _applicationDbContext.Orders.AddAsync(order, cancellationToken);
             await _applicationDbContext.SaveChangesAsync(cancellationToken);

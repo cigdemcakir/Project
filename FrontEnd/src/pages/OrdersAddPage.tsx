@@ -20,7 +20,7 @@ function AddOrderPage() {
 
         const startConnection = async () => {
 
-            const jwtJson = localStorage.getItem("d1tech_user");
+            const jwtJson = localStorage.getItem("ecommerce_user");
 
             if(jwtJson){
 

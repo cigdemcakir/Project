@@ -1,0 +1,571 @@
+2023-11-13 19:43:30.791 +03:00 [INF] User profile is available. Using '/Users/Levent/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-11-13 19:43:31.829 +03:00 [INF] Now listening on: https://localhost:7109
+2023-11-13 19:43:31.829 +03:00 [INF] Now listening on: http://localhost:5223
+2023-11-13 19:43:31.831 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-13 19:43:31.832 +03:00 [INF] Hosting environment: Development
+2023-11-13 19:43:31.832 +03:00 [INF] Content root path: /Users/Levent/Desktop/Project/BackEnd/src/ECommerce.WebApi
+2023-11-13 19:43:32.543 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger - -
+2023-11-13 19:43:32.648 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger - - - 301 0 - 106.6402ms
+2023-11-13 19:43:32.663 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/index.html - -
+2023-11-13 19:43:32.830 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/index.html - - - 200 - text/html;charset=utf-8 166.6983ms
+2023-11-13 19:43:32.850 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/swagger-ui.css - -
+2023-11-13 19:43:32.854 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/swagger-ui-bundle.js - -
+2023-11-13 19:43:32.874 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-11-13 19:43:32.875 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/swagger-ui.css - - - 200 143943 text/css 24.6807ms
+2023-11-13 19:43:32.891 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/swagger-ui-standalone-preset.js - -
+2023-11-13 19:43:32.925 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-11-13 19:43:32.928 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-11-13 19:43:32.930 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/swagger-ui-standalone-preset.js - - - 200 339486 text/javascript 39.2332ms
+2023-11-13 19:43:32.932 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/swagger-ui-bundle.js - - - 200 1096145 text/javascript 78.7668ms
+2023-11-13 19:43:32.980 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/swagger-ui-bundle.js - -
+2023-11-13 19:43:32.980 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/swagger-ui-standalone-preset.js - -
+2023-11-13 19:43:32.983 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-11-13 19:43:32.984 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/swagger-ui-standalone-preset.js - - - 200 339486 text/javascript 3.8503ms
+2023-11-13 19:43:32.988 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-11-13 19:43:32.988 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/swagger-ui-bundle.js - - - 200 1096145 text/javascript 8.2841ms
+2023-11-13 19:43:33.341 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/v1/swagger.json - -
+2023-11-13 19:43:33.545 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 204.7372ms
+2023-11-13 19:52:33.073 +03:00 [INF] Application is shutting down...
+2023-11-13 21:09:53.428 +03:00 [FTL] ECommerceECommerce.Application terminated unexpectedly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in /Users/Levent/Desktop/Project/BackEnd/src/ECommerce.WebApi/Program.cs:line 162
+2023-11-13 21:09:59.326 +03:00 [FTL] ECommerceECommerce.Application terminated unexpectedly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in /Users/Levent/Desktop/Project/BackEnd/src/ECommerce.WebApi/Program.cs:line 162
+2023-11-13 21:10:17.495 +03:00 [FTL] ECommerceECommerce.Application terminated unexpectedly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in /Users/Levent/Desktop/Project/BackEnd/src/ECommerce.WebApi/Program.cs:line 162
+2023-11-13 21:10:23.465 +03:00 [FTL] ECommerceECommerce.Application terminated unexpectedly
+Microsoft.Extensions.Hosting.HostAbortedException: The host was aborted.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.ThrowHostAborted()
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.ResolveHost(IServiceProvider serviceProvider, DiagnosticListener diagnosticListener)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in /Users/Levent/Desktop/Project/BackEnd/src/ECommerce.WebApi/Program.cs:line 162
+2023-11-13 21:14:00.653 +03:00 [INF] User profile is available. Using '/Users/Levent/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-11-13 21:14:01.379 +03:00 [INF] Now listening on: https://localhost:7109
+2023-11-13 21:14:01.379 +03:00 [INF] Now listening on: http://localhost:5223
+2023-11-13 21:14:01.381 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-13 21:14:01.381 +03:00 [INF] Hosting environment: Development
+2023-11-13 21:14:01.382 +03:00 [INF] Content root path: /Users/Levent/Desktop/Project/BackEnd/src/ECommerce.WebApi
+2023-11-13 21:14:01.822 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/index.html - -
+2023-11-13 21:14:02.007 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/index.html - - - 200 - text/html;charset=utf-8 187.0504ms
+2023-11-13 21:14:02.044 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/swagger-ui-bundle.js - -
+2023-11-13 21:14:02.109 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-11-13 21:14:02.112 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/swagger-ui-bundle.js - - - 200 1096145 text/javascript 68.3698ms
+2023-11-13 21:14:02.396 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/v1/swagger.json - -
+2023-11-13 21:14:02.578 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 181.7432ms
+2023-11-13 21:16:45.532 +03:00 [INF] Application is shutting down...
+2023-11-13 21:26:43.915 +03:00 [INF] User profile is available. Using '/Users/Levent/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-11-13 21:26:44.724 +03:00 [INF] Now listening on: https://localhost:7109
+2023-11-13 21:26:44.724 +03:00 [INF] Now listening on: http://localhost:5223
+2023-11-13 21:26:44.726 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-13 21:26:44.726 +03:00 [INF] Hosting environment: Development
+2023-11-13 21:26:44.726 +03:00 [INF] Content root path: /Users/Levent/Desktop/Project/BackEnd/src/ECommerce.WebApi
+2023-11-13 21:26:45.037 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/index.html - -
+2023-11-13 21:26:45.221 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/index.html - - - 200 - text/html;charset=utf-8 186.2928ms
+2023-11-13 21:26:45.576 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/v1/swagger.json - -
+2023-11-13 21:26:45.764 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 187.4128ms
+2023-11-13 21:27:33.618 +03:00 [INF] Application is shutting down...
+2023-11-13 21:28:51.635 +03:00 [INF] User profile is available. Using '/Users/Levent/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-11-13 21:28:52.290 +03:00 [INF] Now listening on: https://localhost:7109
+2023-11-13 21:28:52.291 +03:00 [INF] Now listening on: http://localhost:5223
+2023-11-13 21:28:52.292 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-13 21:28:52.293 +03:00 [INF] Hosting environment: Development
+2023-11-13 21:28:52.293 +03:00 [INF] Content root path: /Users/Levent/Desktop/Project/BackEnd/src/ECommerce.WebApi
+2023-11-13 21:28:52.763 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/index.html - -
+2023-11-13 21:28:52.956 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/index.html - - - 200 - text/html;charset=utf-8 195.2689ms
+2023-11-13 21:28:53.243 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/v1/swagger.json - -
+2023-11-13 21:28:53.445 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 202.4441ms
+2023-11-13 21:33:24.757 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/api/Product/Add application/json 159
+2023-11-13 21:33:24.794 +03:00 [INF] CORS policy execution successful.
+2023-11-13 21:33:24.867 +03:00 [INF] Executing endpoint 'WebApi.Controllers.ProductController.CreateProductAsync (ECommerce.WebApi)'
+2023-11-13 21:33:24.927 +03:00 [INF] Route matched with {action = "CreateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateProductAsync(Application.Features.Products.Commands.CreateProduct.ProductAddCommand) on controller WebApi.Controllers.ProductController (ECommerce.WebApi).
+2023-11-13 21:33:27.484 +03:00 [INF] Executed DbCommand (75ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (DbType = DateTimeOffset), @p4='?' (Size = 4000), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 500), @p7='?' (DbType = Boolean), @p8='?' (Size = 4000), @p9='?' (DbType = DateTimeOffset), @p10='?' (Size = 200), @p11='?' (Precision = 18) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([Id], [Categories], [CreatedByUserId], [CreatedOn], [DeletedByUserId], [DeletedOn], [ImageUrl], [IsDeleted], [ModifiedByUserId], [ModifiedOn], [Name], [Price])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+2023-11-13 21:33:27.545 +03:00 [INF] Executing OkObjectResult, writing value of type 'Domain.Common.Response`1[[System.Guid, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-11-13 21:33:27.575 +03:00 [INF] Executed action WebApi.Controllers.ProductController.CreateProductAsync (ECommerce.WebApi) in 2641.1027ms
+2023-11-13 21:33:27.576 +03:00 [INF] Executed endpoint 'WebApi.Controllers.ProductController.CreateProductAsync (ECommerce.WebApi)'
+2023-11-13 21:33:27.606 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7109/api/Product/Add application/json 159 - 200 - application/json;+charset=utf-8 2848.8287ms
+2023-11-13 21:38:15.452 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/api/Product/Add application/json 156
+2023-11-13 21:38:15.459 +03:00 [INF] CORS policy execution successful.
+2023-11-13 21:38:15.461 +03:00 [INF] Executing endpoint 'WebApi.Controllers.ProductController.CreateProductAsync (ECommerce.WebApi)'
+2023-11-13 21:38:15.462 +03:00 [INF] Route matched with {action = "CreateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateProductAsync(Application.Features.Products.Commands.CreateProduct.ProductAddCommand) on controller WebApi.Controllers.ProductController (ECommerce.WebApi).
+2023-11-13 21:38:15.555 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (DbType = DateTimeOffset), @p4='?' (Size = 4000), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 500), @p7='?' (DbType = Boolean), @p8='?' (Size = 4000), @p9='?' (DbType = DateTimeOffset), @p10='?' (Size = 200), @p11='?' (Precision = 18) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([Id], [Categories], [CreatedByUserId], [CreatedOn], [DeletedByUserId], [DeletedOn], [ImageUrl], [IsDeleted], [ModifiedByUserId], [ModifiedOn], [Name], [Price])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+2023-11-13 21:38:15.558 +03:00 [INF] Executing OkObjectResult, writing value of type 'Domain.Common.Response`1[[System.Guid, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-11-13 21:38:15.559 +03:00 [INF] Executed action WebApi.Controllers.ProductController.CreateProductAsync (ECommerce.WebApi) in 96.8529ms
+2023-11-13 21:38:15.559 +03:00 [INF] Executed endpoint 'WebApi.Controllers.ProductController.CreateProductAsync (ECommerce.WebApi)'
+2023-11-13 21:38:15.560 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7109/api/Product/Add application/json 156 - 200 - application/json;+charset=utf-8 107.8692ms
+2023-11-13 21:46:55.716 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/api/Product/Add application/json 154
+2023-11-13 21:46:55.723 +03:00 [INF] CORS policy execution successful.
+2023-11-13 21:46:55.729 +03:00 [INF] Executing endpoint 'WebApi.Controllers.ProductController.CreateProductAsync (ECommerce.WebApi)'
+2023-11-13 21:46:55.730 +03:00 [INF] Route matched with {action = "CreateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateProductAsync(Application.Features.Products.Commands.CreateProduct.ProductAddCommand) on controller WebApi.Controllers.ProductController (ECommerce.WebApi).
+2023-11-13 21:46:55.792 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (DbType = DateTimeOffset), @p4='?' (Size = 4000), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 500), @p7='?' (DbType = Boolean), @p8='?' (Size = 4000), @p9='?' (DbType = DateTimeOffset), @p10='?' (Size = 200), @p11='?' (Precision = 18) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([Id], [Categories], [CreatedByUserId], [CreatedOn], [DeletedByUserId], [DeletedOn], [ImageUrl], [IsDeleted], [ModifiedByUserId], [ModifiedOn], [Name], [Price])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+2023-11-13 21:46:55.793 +03:00 [INF] Executing OkObjectResult, writing value of type 'Domain.Common.Response`1[[System.Guid, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-11-13 21:46:55.794 +03:00 [INF] Executed action WebApi.Controllers.ProductController.CreateProductAsync (ECommerce.WebApi) in 63.4996ms
+2023-11-13 21:46:55.794 +03:00 [INF] Executed endpoint 'WebApi.Controllers.ProductController.CreateProductAsync (ECommerce.WebApi)'
+2023-11-13 21:46:55.794 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7109/api/Product/Add application/json 154 - 200 - application/json;+charset=utf-8 78.5912ms
+2023-11-13 21:48:22.978 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/api/Product/Add application/json 150
+2023-11-13 21:48:22.980 +03:00 [INF] CORS policy execution successful.
+2023-11-13 21:48:22.980 +03:00 [INF] Executing endpoint 'WebApi.Controllers.ProductController.CreateProductAsync (ECommerce.WebApi)'
+2023-11-13 21:48:22.981 +03:00 [INF] Route matched with {action = "CreateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateProductAsync(Application.Features.Products.Commands.CreateProduct.ProductAddCommand) on controller WebApi.Controllers.ProductController (ECommerce.WebApi).
+2023-11-13 21:48:23.001 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (DbType = DateTimeOffset), @p4='?' (Size = 4000), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 500), @p7='?' (DbType = Boolean), @p8='?' (Size = 4000), @p9='?' (DbType = DateTimeOffset), @p10='?' (Size = 200), @p11='?' (Precision = 18) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([Id], [Categories], [CreatedByUserId], [CreatedOn], [DeletedByUserId], [DeletedOn], [ImageUrl], [IsDeleted], [ModifiedByUserId], [ModifiedOn], [Name], [Price])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+2023-11-13 21:48:23.002 +03:00 [INF] Executing OkObjectResult, writing value of type 'Domain.Common.Response`1[[System.Guid, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-11-13 21:48:23.003 +03:00 [INF] Executed action WebApi.Controllers.ProductController.CreateProductAsync (ECommerce.WebApi) in 22.0214ms
+2023-11-13 21:48:23.003 +03:00 [INF] Executed endpoint 'WebApi.Controllers.ProductController.CreateProductAsync (ECommerce.WebApi)'
+2023-11-13 21:48:23.003 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7109/api/Product/Add application/json 150 - 200 - application/json;+charset=utf-8 25.4425ms
+2023-11-13 21:50:39.803 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/api/Product/Add application/json 155
+2023-11-13 21:50:39.807 +03:00 [INF] CORS policy execution successful.
+2023-11-13 21:50:39.808 +03:00 [INF] Executing endpoint 'WebApi.Controllers.ProductController.CreateProductAsync (ECommerce.WebApi)'
+2023-11-13 21:50:39.810 +03:00 [INF] Route matched with {action = "CreateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateProductAsync(Application.Features.Products.Commands.CreateProduct.ProductAddCommand) on controller WebApi.Controllers.ProductController (ECommerce.WebApi).
+2023-11-13 21:50:39.833 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (DbType = DateTimeOffset), @p4='?' (Size = 4000), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 500), @p7='?' (DbType = Boolean), @p8='?' (Size = 4000), @p9='?' (DbType = DateTimeOffset), @p10='?' (Size = 200), @p11='?' (Precision = 18) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([Id], [Categories], [CreatedByUserId], [CreatedOn], [DeletedByUserId], [DeletedOn], [ImageUrl], [IsDeleted], [ModifiedByUserId], [ModifiedOn], [Name], [Price])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+2023-11-13 21:50:39.835 +03:00 [INF] Executing OkObjectResult, writing value of type 'Domain.Common.Response`1[[System.Guid, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-11-13 21:50:39.836 +03:00 [INF] Executed action WebApi.Controllers.ProductController.CreateProductAsync (ECommerce.WebApi) in 25.6412ms
+2023-11-13 21:50:39.836 +03:00 [INF] Executed endpoint 'WebApi.Controllers.ProductController.CreateProductAsync (ECommerce.WebApi)'
+2023-11-13 21:50:39.836 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7109/api/Product/Add application/json 155 - 200 - application/json;+charset=utf-8 34.0613ms
+2023-11-13 21:51:55.737 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/api/Product/Add application/json 152
+2023-11-13 21:51:55.738 +03:00 [INF] CORS policy execution successful.
+2023-11-13 21:51:55.738 +03:00 [INF] Executing endpoint 'WebApi.Controllers.ProductController.CreateProductAsync (ECommerce.WebApi)'
+2023-11-13 21:51:55.739 +03:00 [INF] Route matched with {action = "CreateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateProductAsync(Application.Features.Products.Commands.CreateProduct.ProductAddCommand) on controller WebApi.Controllers.ProductController (ECommerce.WebApi).
+2023-11-13 21:51:55.748 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (DbType = DateTimeOffset), @p4='?' (Size = 4000), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 500), @p7='?' (DbType = Boolean), @p8='?' (Size = 4000), @p9='?' (DbType = DateTimeOffset), @p10='?' (Size = 200), @p11='?' (Precision = 18) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([Id], [Categories], [CreatedByUserId], [CreatedOn], [DeletedByUserId], [DeletedOn], [ImageUrl], [IsDeleted], [ModifiedByUserId], [ModifiedOn], [Name], [Price])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+2023-11-13 21:51:55.748 +03:00 [INF] Executing OkObjectResult, writing value of type 'Domain.Common.Response`1[[System.Guid, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-11-13 21:51:55.749 +03:00 [INF] Executed action WebApi.Controllers.ProductController.CreateProductAsync (ECommerce.WebApi) in 10.4152ms
+2023-11-13 21:51:55.749 +03:00 [INF] Executed endpoint 'WebApi.Controllers.ProductController.CreateProductAsync (ECommerce.WebApi)'
+2023-11-13 21:51:55.751 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7109/api/Product/Add application/json 152 - 200 - application/json;+charset=utf-8 13.4679ms
+2023-11-13 21:53:39.222 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/api/Product/Add application/json 155
+2023-11-13 21:53:39.223 +03:00 [INF] CORS policy execution successful.
+2023-11-13 21:53:39.224 +03:00 [INF] Executing endpoint 'WebApi.Controllers.ProductController.CreateProductAsync (ECommerce.WebApi)'
+2023-11-13 21:53:39.224 +03:00 [INF] Route matched with {action = "CreateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateProductAsync(Application.Features.Products.Commands.CreateProduct.ProductAddCommand) on controller WebApi.Controllers.ProductController (ECommerce.WebApi).
+2023-11-13 21:53:39.231 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (DbType = DateTimeOffset), @p4='?' (Size = 4000), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 500), @p7='?' (DbType = Boolean), @p8='?' (Size = 4000), @p9='?' (DbType = DateTimeOffset), @p10='?' (Size = 200), @p11='?' (Precision = 18) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([Id], [Categories], [CreatedByUserId], [CreatedOn], [DeletedByUserId], [DeletedOn], [ImageUrl], [IsDeleted], [ModifiedByUserId], [ModifiedOn], [Name], [Price])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+2023-11-13 21:53:39.231 +03:00 [INF] Executing OkObjectResult, writing value of type 'Domain.Common.Response`1[[System.Guid, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-11-13 21:53:39.232 +03:00 [INF] Executed action WebApi.Controllers.ProductController.CreateProductAsync (ECommerce.WebApi) in 7.467ms
+2023-11-13 21:53:39.232 +03:00 [INF] Executed endpoint 'WebApi.Controllers.ProductController.CreateProductAsync (ECommerce.WebApi)'
+2023-11-13 21:53:39.232 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7109/api/Product/Add application/json 155 - 200 - application/json;+charset=utf-8 10.2431ms
+2023-11-13 21:55:15.374 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/api/Product/Add application/json 157
+2023-11-13 21:55:15.376 +03:00 [INF] CORS policy execution successful.
+2023-11-13 21:55:15.376 +03:00 [INF] Executing endpoint 'WebApi.Controllers.ProductController.CreateProductAsync (ECommerce.WebApi)'
+2023-11-13 21:55:15.376 +03:00 [INF] Route matched with {action = "CreateProduct", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateProductAsync(Application.Features.Products.Commands.CreateProduct.ProductAddCommand) on controller WebApi.Controllers.ProductController (ECommerce.WebApi).
+2023-11-13 21:55:15.391 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (DbType = DateTimeOffset), @p4='?' (Size = 4000), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 500), @p7='?' (DbType = Boolean), @p8='?' (Size = 4000), @p9='?' (DbType = DateTimeOffset), @p10='?' (Size = 200), @p11='?' (Precision = 18) (Scale = 2) (DbType = Decimal)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([Id], [Categories], [CreatedByUserId], [CreatedOn], [DeletedByUserId], [DeletedOn], [ImageUrl], [IsDeleted], [ModifiedByUserId], [ModifiedOn], [Name], [Price])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);
+2023-11-13 21:55:15.393 +03:00 [INF] Executing OkObjectResult, writing value of type 'Domain.Common.Response`1[[System.Guid, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2023-11-13 21:55:15.393 +03:00 [INF] Executed action WebApi.Controllers.ProductController.CreateProductAsync (ECommerce.WebApi) in 16.6942ms
+2023-11-13 21:55:15.394 +03:00 [INF] Executed endpoint 'WebApi.Controllers.ProductController.CreateProductAsync (ECommerce.WebApi)'
+2023-11-13 21:55:15.398 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7109/api/Product/Add application/json 157 - 200 - application/json;+charset=utf-8 23.5245ms
+2023-11-13 21:55:41.944 +03:00 [INF] Application is shutting down...
+2023-11-13 21:58:58.553 +03:00 [INF] User profile is available. Using '/Users/Levent/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-11-13 21:58:59.137 +03:00 [INF] Now listening on: https://localhost:7109
+2023-11-13 21:58:59.138 +03:00 [INF] Now listening on: http://localhost:5223
+2023-11-13 21:58:59.140 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-13 21:58:59.140 +03:00 [INF] Hosting environment: Development
+2023-11-13 21:58:59.140 +03:00 [INF] Content root path: /Users/Levent/Desktop/Project/BackEnd/src/ECommerce.WebApi
+2023-11-13 21:58:59.658 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/index.html - -
+2023-11-13 21:58:59.872 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/index.html - - - 200 - text/html;charset=utf-8 215.8372ms
+2023-11-13 21:58:59.904 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/swagger-ui-bundle.js - -
+2023-11-13 21:58:59.931 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/swagger-ui-standalone-preset.js - -
+2023-11-13 21:58:59.962 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-11-13 21:58:59.962 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-11-13 21:58:59.967 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/swagger-ui-standalone-preset.js - - - 200 339486 text/javascript 36.6562ms
+2023-11-13 21:58:59.967 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/swagger-ui-bundle.js - - - 200 1096145 text/javascript 63.3002ms
+2023-11-13 21:59:00.219 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/v1/swagger.json - -
+2023-11-13 21:59:00.348 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/swagger-ui-bundle.js - -
+2023-11-13 21:59:00.352 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-11-13 21:59:00.352 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/swagger-ui-bundle.js - - - 200 1096145 text/javascript 4.0078ms
+2023-11-13 21:59:00.376 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 156.9633ms
+2023-11-13 22:09:44.883 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignInStart - -
+2023-11-13 22:09:45.049 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (ECommerce.WebApi)'
+2023-11-13 22:09:45.098 +03:00 [INF] Route matched with {action = "GoogleSignInStart", controller = "Authentication"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GoogleSignInStartAsync() on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-13 22:09:45.373 +03:00 [INF] Executing RedirectResult, redirecting to https://accounts.google.com/o/oauth2/v2/auth?client_id=424536091498-qqtt1rg7jtr9hr99hbrvokl7krq5ls6g.apps.googleusercontent.com&response_type=code&scope=openid%20email%20profile&access_type=offline&redirect_uri=https://localhost:7109/api/Authentication/GoogleSignIn.
+2023-11-13 22:09:45.378 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (ECommerce.WebApi) in 275.5407ms
+2023-11-13 22:09:45.382 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (ECommerce.WebApi)'
+2023-11-13 22:09:45.385 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignInStart - - - 302 0 - 503.6040ms
+2023-11-13 22:09:48.869 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignIn?code=4%2F0AfJohXng-RLteYrSr5xmc-e4ttYXIhlXgO5aYjqWTfZxl_OCwc5ZWjJY066FVGlzPmIEtw&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=1&prompt=consent - -
+2023-11-13 22:09:48.879 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInAsync (ECommerce.WebApi)'
+2023-11-13 22:09:48.896 +03:00 [INF] Route matched with {action = "GoogleSignIn", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GoogleSignInAsync(System.String, System.Threading.CancellationToken) on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-13 22:09:51.929 +03:00 [INF] Executed DbCommand (80ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedByUserId], [a].[CreatedOn], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedByUserId], [a].[ModifiedOn], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-11-13 22:09:51.996 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedByUserId], [a].[CreatedOn], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedByUserId], [a].[ModifiedOn], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-11-13 22:09:52.010 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedByUserId], [a].[CreatedOn], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedByUserId], [a].[ModifiedOn], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-11-13 22:09:52.333 +03:00 [INF] Executed DbCommand (17ms) [Parameters=[@p0='?' (Size = 191), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = DateTimeOffset), @p5='?' (Size = 256), @p6='?' (DbType = Boolean), @p7='?' (Size = 50), @p8='?' (Size = 50), @p9='?' (DbType = Boolean), @p10='?' (DbType = DateTimeOffset), @p11='?' (Size = 4000), @p12='?' (DbType = DateTimeOffset), @p13='?' (Size = 256), @p14='?' (Size = 256), @p15='?' (Size = 4000), @p16='?' (Size = 20), @p17='?' (DbType = Boolean), @p18='?' (Size = 4000), @p19='?' (DbType = Boolean), @p20='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [CreatedByUserId], [CreatedOn], [Email], [EmailConfirmed], [FirstName], [LastName], [LockoutEnabled], [LockoutEnd], [ModifiedByUserId], [ModifiedOn], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20);
+2023-11-13 22:09:52.496 +03:00 [INF] Executing RedirectResult, redirecting to http://localhost:5173/social-login?access_token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJiYzM3NjM5Mi01NDAxLTRiNjktYjQzMS02Njg3NjViYzNjNGEiLCJlbWFpbCI6IjRzb2Z0d2FyZWhvdXNlNEBnbWFpbC5jb20iLCJzdWIiOiJiYzM3NjM5Mi01NDAxLTRiNjktYjQzMS02Njg3NjViYzNjNGEiLCJnaXZlbl9uYW1lIjoiU29mdHdhcmUiLCJmYW1pbHlfbmFtZSI6IkhvdXNlIiwianRpIjoiZTYwZTU3NGQtMWY1Mi00NGUzLTkzYjYtNzIxMmYyZmYwM2QxIiwiZXhwIjoxNjk5OTA2MTkyLCJpc3MiOiJDcmF3bGVyIiwiYXVkIjoiQ3Jhd2xlciJ9.lO-mIATrey_cWaV5-HEqQuXmeJxkdNAcLN6ofIMJjDk&expiry_date=-8585017006931257718.
+2023-11-13 22:09:52.498 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.GoogleSignInAsync (ECommerce.WebApi) in 3601.3781ms
+2023-11-13 22:09:52.499 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInAsync (ECommerce.WebApi)'
+2023-11-13 22:09:52.525 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignIn?code=4%2F0AfJohXng-RLteYrSr5xmc-e4ttYXIhlXgO5aYjqWTfZxl_OCwc5ZWjJY066FVGlzPmIEtw&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=1&prompt=consent - - - 302 0 - 3655.4200ms
+2023-11-13 22:09:54.986 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Products/Pull - -
+2023-11-13 22:09:54.990 +03:00 [INF] CORS policy execution successful.
+2023-11-13 22:09:54.994 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Products/Pull - - - 404 0 - 8.0129ms
+2023-11-13 22:10:10.933 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Products/Pull - -
+2023-11-13 22:10:10.934 +03:00 [INF] CORS policy execution successful.
+2023-11-13 22:10:10.935 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Products/Pull - - - 404 0 - 2.2690ms
+2023-11-13 22:10:22.823 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Product/Pull - -
+2023-11-13 22:10:22.824 +03:00 [INF] Executing endpoint 'WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi)'
+2023-11-13 22:10:22.829 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAsync() on controller WebApi.Controllers.ProductController (ECommerce.WebApi).
+2023-11-13 22:10:23.007 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Name], [p].[Price], [p].[ImageUrl], [p].[Categories]
+FROM [Products] AS [p]
+ORDER BY [p].[Name]
+2023-11-13 22:10:23.025 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.Features.Products.Queries.GetAll.ProductGetAllDto, ECommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-13 22:10:23.055 +03:00 [INF] Executed action WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi) in 225.1873ms
+2023-11-13 22:10:23.055 +03:00 [INF] Executed endpoint 'WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi)'
+2023-11-13 22:10:23.055 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Product/Pull - - - 200 - application/json;+charset=utf-8 232.0163ms
+2023-11-13 22:11:05.252 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Product/Pull - -
+2023-11-13 22:11:05.254 +03:00 [INF] CORS policy execution successful.
+2023-11-13 22:11:05.254 +03:00 [INF] Executing endpoint 'WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi)'
+2023-11-13 22:11:05.254 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAsync() on controller WebApi.Controllers.ProductController (ECommerce.WebApi).
+2023-11-13 22:11:05.281 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Name], [p].[Price], [p].[ImageUrl], [p].[Categories]
+FROM [Products] AS [p]
+ORDER BY [p].[Name]
+2023-11-13 22:11:05.283 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.Features.Products.Queries.GetAll.ProductGetAllDto, ECommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-13 22:11:05.284 +03:00 [INF] Executed action WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi) in 28.9021ms
+2023-11-13 22:11:05.284 +03:00 [INF] Executed endpoint 'WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi)'
+2023-11-13 22:11:05.284 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Product/Pull - - - 200 - application/json;+charset=utf-8 32.5808ms
+2023-11-13 22:19:51.408 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignInStart - -
+2023-11-13 22:19:51.414 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (ECommerce.WebApi)'
+2023-11-13 22:19:51.416 +03:00 [INF] Route matched with {action = "GoogleSignInStart", controller = "Authentication"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GoogleSignInStartAsync() on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-13 22:19:51.448 +03:00 [INF] Executing RedirectResult, redirecting to https://accounts.google.com/o/oauth2/v2/auth?client_id=424536091498-qqtt1rg7jtr9hr99hbrvokl7krq5ls6g.apps.googleusercontent.com&response_type=code&scope=openid%20email%20profile&access_type=offline&redirect_uri=https://localhost:7109/api/Authentication/GoogleSignIn.
+2023-11-13 22:19:51.448 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (ECommerce.WebApi) in 31.5558ms
+2023-11-13 22:19:51.448 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (ECommerce.WebApi)'
+2023-11-13 22:19:51.449 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignInStart - - - 302 0 - 42.0758ms
+2023-11-13 22:19:53.912 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignIn?code=4%2F0AfJohXlfqI3tq60Q8zpVk7rET7zzx0qVykzg7jJwlqvrjuBRmEKzcdOh7Ne2lEMHDWMYmw&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=1&prompt=consent - -
+2023-11-13 22:19:53.913 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInAsync (ECommerce.WebApi)'
+2023-11-13 22:19:53.913 +03:00 [INF] Route matched with {action = "GoogleSignIn", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GoogleSignInAsync(System.String, System.Threading.CancellationToken) on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-13 22:19:54.161 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedByUserId], [a].[CreatedOn], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedByUserId], [a].[ModifiedOn], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-11-13 22:19:54.174 +03:00 [INF] Executing RedirectResult, redirecting to http://localhost:5173/social-login?access_token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJiYzM3NjM5Mi01NDAxLTRiNjktYjQzMS02Njg3NjViYzNjNGEiLCJlbWFpbCI6IjRzb2Z0d2FyZWhvdXNlNEBnbWFpbC5jb20iLCJzdWIiOiJiYzM3NjM5Mi01NDAxLTRiNjktYjQzMS02Njg3NjViYzNjNGEiLCJnaXZlbl9uYW1lIjoiU29mdHdhcmUiLCJmYW1pbHlfbmFtZSI6IkhvdXNlIiwianRpIjoiOTFiOGI3YzItYzIxNy00MjM5LWI4MGEtNjEwYzUyZDdhOThmIiwiZXhwIjoxNjk5OTA2Nzk0LCJpc3MiOiJDcmF3bGVyIiwiYXVkIjoiQ3Jhd2xlciJ9.UpJ0vOve6c_beu1Ed1-1EJtf7ftjdCMSrmrCM4wFHbY&expiry_date=-8585017000913040518.
+2023-11-13 22:19:54.174 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.GoogleSignInAsync (ECommerce.WebApi) in 260.4236ms
+2023-11-13 22:19:54.174 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInAsync (ECommerce.WebApi)'
+2023-11-13 22:19:54.174 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignIn?code=4%2F0AfJohXlfqI3tq60Q8zpVk7rET7zzx0qVykzg7jJwlqvrjuBRmEKzcdOh7Ne2lEMHDWMYmw&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=1&prompt=consent - - - 302 0 - 262.1915ms
+2023-11-13 22:20:18.222 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignInStart - -
+2023-11-13 22:20:18.223 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (ECommerce.WebApi)'
+2023-11-13 22:20:18.223 +03:00 [INF] Route matched with {action = "GoogleSignInStart", controller = "Authentication"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GoogleSignInStartAsync() on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-13 22:20:18.224 +03:00 [INF] Executing RedirectResult, redirecting to https://accounts.google.com/o/oauth2/v2/auth?client_id=424536091498-qqtt1rg7jtr9hr99hbrvokl7krq5ls6g.apps.googleusercontent.com&response_type=code&scope=openid%20email%20profile&access_type=offline&redirect_uri=https://localhost:7109/api/Authentication/GoogleSignIn.
+2023-11-13 22:20:18.224 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (ECommerce.WebApi) in 0.4879ms
+2023-11-13 22:20:18.224 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (ECommerce.WebApi)'
+2023-11-13 22:20:18.225 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignInStart - - - 302 0 - 2.3906ms
+2023-11-13 22:20:20.787 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignIn?code=4%2F0AfJohXlIoNaCeB6-NS9FoJ2yAlxF1C80x7HvD1ls3-apV-ygc8DnFdlj6JJ_MLRbuoEV7A&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=1&prompt=consent - -
+2023-11-13 22:20:20.787 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInAsync (ECommerce.WebApi)'
+2023-11-13 22:20:20.787 +03:00 [INF] Route matched with {action = "GoogleSignIn", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GoogleSignInAsync(System.String, System.Threading.CancellationToken) on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-13 22:20:20.990 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedByUserId], [a].[CreatedOn], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedByUserId], [a].[ModifiedOn], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-11-13 22:20:20.991 +03:00 [INF] Executing RedirectResult, redirecting to http://localhost:5173/social-login?access_token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJiYzM3NjM5Mi01NDAxLTRiNjktYjQzMS02Njg3NjViYzNjNGEiLCJlbWFpbCI6IjRzb2Z0d2FyZWhvdXNlNEBnbWFpbC5jb20iLCJzdWIiOiJiYzM3NjM5Mi01NDAxLTRiNjktYjQzMS02Njg3NjViYzNjNGEiLCJnaXZlbl9uYW1lIjoiU29mdHdhcmUiLCJmYW1pbHlfbmFtZSI6IkhvdXNlIiwianRpIjoiY2RkZTI4ZjQtOWU1Zi00NDk0LThmMTAtMzFjYTU5YzEzZjc0IiwiZXhwIjoxNjk5OTA2ODIwLCJpc3MiOiJDcmF3bGVyIiwiYXVkIjoiQ3Jhd2xlciJ9.6GvPL6EN-5HgTn6b9qdk4iC86XeYtDVW3wA0hjSuONU&expiry_date=-8585017000644863568.
+2023-11-13 22:20:20.991 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.GoogleSignInAsync (ECommerce.WebApi) in 203.7353ms
+2023-11-13 22:20:20.991 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInAsync (ECommerce.WebApi)'
+2023-11-13 22:20:20.992 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignIn?code=4%2F0AfJohXlIoNaCeB6-NS9FoJ2yAlxF1C80x7HvD1ls3-apV-ygc8DnFdlj6JJ_MLRbuoEV7A&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=1&prompt=consent - - - 302 0 - 204.7830ms
+2023-11-13 22:20:22.938 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Product/Pull - -
+2023-11-13 22:20:22.939 +03:00 [INF] CORS policy execution successful.
+2023-11-13 22:20:22.939 +03:00 [INF] Executing endpoint 'WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi)'
+2023-11-13 22:20:22.939 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAsync() on controller WebApi.Controllers.ProductController (ECommerce.WebApi).
+2023-11-13 22:20:22.948 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Name], [p].[Price], [p].[ImageUrl], [p].[Categories]
+FROM [Products] AS [p]
+ORDER BY [p].[Name]
+2023-11-13 22:20:22.949 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.Features.Products.Queries.GetAll.ProductGetAllDto, ECommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-13 22:20:22.949 +03:00 [INF] Executed action WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi) in 9.9162ms
+2023-11-13 22:20:22.950 +03:00 [INF] Executed endpoint 'WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi)'
+2023-11-13 22:20:22.950 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Product/Pull - - - 200 - application/json;+charset=utf-8 11.8006ms
+2023-11-13 22:21:59.349 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Product/Pull - -
+2023-11-13 22:21:59.349 +03:00 [INF] CORS policy execution successful.
+2023-11-13 22:21:59.350 +03:00 [INF] Executing endpoint 'WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi)'
+2023-11-13 22:21:59.350 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAsync() on controller WebApi.Controllers.ProductController (ECommerce.WebApi).
+2023-11-13 22:21:59.355 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Name], [p].[Price], [p].[ImageUrl], [p].[Categories]
+FROM [Products] AS [p]
+ORDER BY [p].[Name]
+2023-11-13 22:21:59.356 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.Features.Products.Queries.GetAll.ProductGetAllDto, ECommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-13 22:21:59.356 +03:00 [INF] Executed action WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi) in 5.8116ms
+2023-11-13 22:21:59.356 +03:00 [INF] Executed endpoint 'WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi)'
+2023-11-13 22:21:59.357 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Product/Pull - - - 200 - application/json;+charset=utf-8 8.0010ms
+2023-11-13 22:22:13.351 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Product/Pull - -
+2023-11-13 22:22:13.351 +03:00 [INF] CORS policy execution successful.
+2023-11-13 22:22:13.352 +03:00 [INF] Executing endpoint 'WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi)'
+2023-11-13 22:22:13.352 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAsync() on controller WebApi.Controllers.ProductController (ECommerce.WebApi).
+2023-11-13 22:22:13.355 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Name], [p].[Price], [p].[ImageUrl], [p].[Categories]
+FROM [Products] AS [p]
+ORDER BY [p].[Name]
+2023-11-13 22:22:13.357 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.Features.Products.Queries.GetAll.ProductGetAllDto, ECommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-13 22:22:13.357 +03:00 [INF] Executed action WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi) in 5.044ms
+2023-11-13 22:22:13.357 +03:00 [INF] Executed endpoint 'WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi)'
+2023-11-13 22:22:13.358 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Product/Pull - - - 200 - application/json;+charset=utf-8 6.3067ms
+2023-11-13 22:22:49.144 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Product/Pull - -
+2023-11-13 22:22:49.144 +03:00 [INF] CORS policy execution successful.
+2023-11-13 22:22:49.144 +03:00 [INF] Executing endpoint 'WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi)'
+2023-11-13 22:22:49.144 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAsync() on controller WebApi.Controllers.ProductController (ECommerce.WebApi).
+2023-11-13 22:22:49.149 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Name], [p].[Price], [p].[ImageUrl], [p].[Categories]
+FROM [Products] AS [p]
+ORDER BY [p].[Name]
+2023-11-13 22:22:49.150 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.Features.Products.Queries.GetAll.ProductGetAllDto, ECommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-13 22:22:49.150 +03:00 [INF] Executed action WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi) in 5.5878ms
+2023-11-13 22:22:49.150 +03:00 [INF] Executed endpoint 'WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi)'
+2023-11-13 22:22:49.151 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Product/Pull - - - 200 - application/json;+charset=utf-8 6.8708ms
+2023-11-13 22:23:38.716 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Product/Pull - -
+2023-11-13 22:23:38.717 +03:00 [INF] CORS policy execution successful.
+2023-11-13 22:23:38.717 +03:00 [INF] Executing endpoint 'WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi)'
+2023-11-13 22:23:38.718 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAsync() on controller WebApi.Controllers.ProductController (ECommerce.WebApi).
+2023-11-13 22:23:38.721 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Name], [p].[Price], [p].[ImageUrl], [p].[Categories]
+FROM [Products] AS [p]
+ORDER BY [p].[Name]
+2023-11-13 22:23:38.722 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.Features.Products.Queries.GetAll.ProductGetAllDto, ECommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-13 22:23:38.725 +03:00 [INF] Executed action WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi) in 7.0464ms
+2023-11-13 22:23:38.725 +03:00 [INF] Executed endpoint 'WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi)'
+2023-11-13 22:23:38.725 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Product/Pull - - - 200 - application/json;+charset=utf-8 8.9017ms
+2023-11-13 22:24:29.910 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Product/Pull - -
+2023-11-13 22:24:29.911 +03:00 [INF] CORS policy execution successful.
+2023-11-13 22:24:29.912 +03:00 [INF] Executing endpoint 'WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi)'
+2023-11-13 22:24:29.912 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAsync() on controller WebApi.Controllers.ProductController (ECommerce.WebApi).
+2023-11-13 22:24:29.916 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Name], [p].[Price], [p].[ImageUrl], [p].[Categories]
+FROM [Products] AS [p]
+ORDER BY [p].[Name]
+2023-11-13 22:24:29.917 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.Features.Products.Queries.GetAll.ProductGetAllDto, ECommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-13 22:24:29.917 +03:00 [INF] Executed action WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi) in 4.7627ms
+2023-11-13 22:24:29.917 +03:00 [INF] Executed endpoint 'WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi)'
+2023-11-13 22:24:29.918 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Product/Pull - - - 200 - application/json;+charset=utf-8 7.2886ms
+2023-11-13 22:27:12.963 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignInStart - -
+2023-11-13 22:27:12.964 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (ECommerce.WebApi)'
+2023-11-13 22:27:12.964 +03:00 [INF] Route matched with {action = "GoogleSignInStart", controller = "Authentication"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GoogleSignInStartAsync() on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-13 22:27:12.965 +03:00 [INF] Executing RedirectResult, redirecting to https://accounts.google.com/o/oauth2/v2/auth?client_id=424536091498-qqtt1rg7jtr9hr99hbrvokl7krq5ls6g.apps.googleusercontent.com&response_type=code&scope=openid%20email%20profile&access_type=offline&redirect_uri=https://localhost:7109/api/Authentication/GoogleSignIn.
+2023-11-13 22:27:12.965 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (ECommerce.WebApi) in 0.4552ms
+2023-11-13 22:27:12.965 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (ECommerce.WebApi)'
+2023-11-13 22:27:12.965 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignInStart - - - 302 0 - 1.8723ms
+2023-11-13 22:27:15.303 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignIn?code=4%2F0AfJohXkxHjBQ3sJBCK0IEfC5Q8ZTmQnrKwXnfLIeLGAkUTxP_dLfQi3hs8n_f6fe4t8lSw&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=1&prompt=consent - -
+2023-11-13 22:27:15.304 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInAsync (ECommerce.WebApi)'
+2023-11-13 22:27:15.304 +03:00 [INF] Route matched with {action = "GoogleSignIn", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GoogleSignInAsync(System.String, System.Threading.CancellationToken) on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-13 22:27:15.658 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedByUserId], [a].[CreatedOn], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedByUserId], [a].[ModifiedOn], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-11-13 22:27:15.659 +03:00 [INF] Executing RedirectResult, redirecting to http://localhost:5173/social-login?access_token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJiYzM3NjM5Mi01NDAxLTRiNjktYjQzMS02Njg3NjViYzNjNGEiLCJlbWFpbCI6IjRzb2Z0d2FyZWhvdXNlNEBnbWFpbC5jb20iLCJzdWIiOiJiYzM3NjM5Mi01NDAxLTRiNjktYjQzMS02Njg3NjViYzNjNGEiLCJnaXZlbl9uYW1lIjoiU29mdHdhcmUiLCJmYW1pbHlfbmFtZSI6IkhvdXNlIiwianRpIjoiM2ZmZjEwNDYtZmJjNy00YTA4LWE1NGEtMTNjYzY1ZTU1ZWNhIiwiZXhwIjoxNjk5OTA3MjM1LCJpc3MiOiJDcmF3bGVyIiwiYXVkIjoiQ3Jhd2xlciJ9.-W9FCw3DirV2H1NAzeta-orRtR14dFAf__xR6JZA7n0&expiry_date=-8585016996498187318.
+2023-11-13 22:27:15.659 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.GoogleSignInAsync (ECommerce.WebApi) in 354.9471ms
+2023-11-13 22:27:15.659 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInAsync (ECommerce.WebApi)'
+2023-11-13 22:27:15.659 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignIn?code=4%2F0AfJohXkxHjBQ3sJBCK0IEfC5Q8ZTmQnrKwXnfLIeLGAkUTxP_dLfQi3hs8n_f6fe4t8lSw&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=1&prompt=consent - - - 302 0 - 355.9496ms
+2023-11-13 22:27:17.576 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Product/Pull - -
+2023-11-13 22:27:17.576 +03:00 [INF] CORS policy execution successful.
+2023-11-13 22:27:17.576 +03:00 [INF] Executing endpoint 'WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi)'
+2023-11-13 22:27:17.577 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAsync() on controller WebApi.Controllers.ProductController (ECommerce.WebApi).
+2023-11-13 22:27:17.581 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Name], [p].[Price], [p].[ImageUrl], [p].[Categories]
+FROM [Products] AS [p]
+ORDER BY [p].[Name]
+2023-11-13 22:27:17.582 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.Features.Products.Queries.GetAll.ProductGetAllDto, ECommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-13 22:27:17.582 +03:00 [INF] Executed action WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi) in 5.5538ms
+2023-11-13 22:27:17.583 +03:00 [INF] Executed endpoint 'WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi)'
+2023-11-13 22:27:17.583 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Product/Pull - - - 200 - application/json;+charset=utf-8 7.1360ms
+2023-11-13 22:32:40.678 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Product/Pull - -
+2023-11-13 22:32:40.679 +03:00 [INF] CORS policy execution successful.
+2023-11-13 22:32:40.679 +03:00 [INF] Executing endpoint 'WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi)'
+2023-11-13 22:32:40.679 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAsync() on controller WebApi.Controllers.ProductController (ECommerce.WebApi).
+2023-11-13 22:32:40.683 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Name], [p].[Price], [p].[ImageUrl], [p].[Categories]
+FROM [Products] AS [p]
+ORDER BY [p].[Name]
+2023-11-13 22:32:40.683 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.Features.Products.Queries.GetAll.ProductGetAllDto, ECommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-13 22:32:40.683 +03:00 [INF] Executed action WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi) in 4.2207ms
+2023-11-13 22:32:40.684 +03:00 [INF] Executed endpoint 'WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi)'
+2023-11-13 22:32:40.684 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Product/Pull - - - 200 - application/json;+charset=utf-8 5.7032ms
+2023-11-13 22:33:04.050 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Product/Pull - -
+2023-11-13 22:33:04.050 +03:00 [INF] CORS policy execution successful.
+2023-11-13 22:33:04.050 +03:00 [INF] Executing endpoint 'WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi)'
+2023-11-13 22:33:04.051 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAsync() on controller WebApi.Controllers.ProductController (ECommerce.WebApi).
+2023-11-13 22:33:04.054 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Name], [p].[Price], [p].[ImageUrl], [p].[Categories]
+FROM [Products] AS [p]
+ORDER BY [p].[Name]
+2023-11-13 22:33:04.055 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.Features.Products.Queries.GetAll.ProductGetAllDto, ECommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-13 22:33:04.055 +03:00 [INF] Executed action WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi) in 4.3328ms
+2023-11-13 22:33:04.055 +03:00 [INF] Executed endpoint 'WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi)'
+2023-11-13 22:33:04.056 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Product/Pull - - - 200 - application/json;+charset=utf-8 6.1060ms
+2023-11-13 22:39:44.763 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignInStart - -
+2023-11-13 22:39:44.768 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (ECommerce.WebApi)'
+2023-11-13 22:39:44.769 +03:00 [INF] Route matched with {action = "GoogleSignInStart", controller = "Authentication"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GoogleSignInStartAsync() on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-13 22:39:44.774 +03:00 [INF] Executing RedirectResult, redirecting to https://accounts.google.com/o/oauth2/v2/auth?client_id=424536091498-qqtt1rg7jtr9hr99hbrvokl7krq5ls6g.apps.googleusercontent.com&response_type=code&scope=openid%20email%20profile&access_type=offline&redirect_uri=https://localhost:7109/api/Authentication/GoogleSignIn.
+2023-11-13 22:39:44.775 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (ECommerce.WebApi) in 4.8672ms
+2023-11-13 22:39:44.775 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (ECommerce.WebApi)'
+2023-11-13 22:39:44.776 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignInStart - - - 302 0 - 12.5357ms
+2023-11-13 22:39:48.742 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignIn?code=4%2F0AfJohXkiAh8Ac54-5yHnS_u3jyhD71-ZJkrkIEBWJFNSI2utq6Ugir76iR0GeOZAQzRQRA&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=1&prompt=consent - -
+2023-11-13 22:39:48.742 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInAsync (ECommerce.WebApi)'
+2023-11-13 22:39:48.743 +03:00 [INF] Route matched with {action = "GoogleSignIn", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GoogleSignInAsync(System.String, System.Threading.CancellationToken) on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-13 22:39:49.023 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedByUserId], [a].[CreatedOn], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedByUserId], [a].[ModifiedOn], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-11-13 22:39:49.027 +03:00 [INF] Executing RedirectResult, redirecting to http://localhost:5173/social-login?access_token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiJiYzM3NjM5Mi01NDAxLTRiNjktYjQzMS02Njg3NjViYzNjNGEiLCJlbWFpbCI6IjRzb2Z0d2FyZWhvdXNlNEBnbWFpbC5jb20iLCJzdWIiOiJiYzM3NjM5Mi01NDAxLTRiNjktYjQzMS02Njg3NjViYzNjNGEiLCJnaXZlbl9uYW1lIjoiU29mdHdhcmUiLCJmYW1pbHlfbmFtZSI6IkhvdXNlIiwianRpIjoiZTlmYTllMTEtY2E2OC00ZWU4LWFjZGMtMjk5Mjc3YTcyZDhkIiwiZXhwIjoxNjk5OTA3OTg5LCJpc3MiOiJDcmF3bGVyIiwiYXVkIjoiQ3Jhd2xlciJ9.ErpPdba_1FDBejedybwexWsJPlGhuhM1IRfSqRfnAXo&expiry_date=-8585016988964509938.
+2023-11-13 22:39:49.027 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.GoogleSignInAsync (ECommerce.WebApi) in 283.7979ms
+2023-11-13 22:39:49.027 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInAsync (ECommerce.WebApi)'
+2023-11-13 22:39:49.028 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignIn?code=4%2F0AfJohXkiAh8Ac54-5yHnS_u3jyhD71-ZJkrkIEBWJFNSI2utq6Ugir76iR0GeOZAQzRQRA&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=1&prompt=consent - - - 302 0 - 286.1027ms
+2023-11-13 22:39:50.684 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Product/Pull - -
+2023-11-13 22:39:50.685 +03:00 [INF] CORS policy execution successful.
+2023-11-13 22:39:50.685 +03:00 [INF] Executing endpoint 'WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi)'
+2023-11-13 22:39:50.685 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAsync() on controller WebApi.Controllers.ProductController (ECommerce.WebApi).
+2023-11-13 22:39:50.691 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Name], [p].[Price], [p].[ImageUrl], [p].[Categories]
+FROM [Products] AS [p]
+ORDER BY [p].[Name]
+2023-11-13 22:39:50.692 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.Features.Products.Queries.GetAll.ProductGetAllDto, ECommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-13 22:39:50.694 +03:00 [INF] Executed action WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi) in 7.8773ms
+2023-11-13 22:39:50.694 +03:00 [INF] Executed endpoint 'WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi)'
+2023-11-13 22:39:50.694 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Product/Pull - - - 200 - application/json;+charset=utf-8 9.8880ms
+2023-11-13 22:40:30.820 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Product/Pull - -
+2023-11-13 22:40:30.825 +03:00 [INF] CORS policy execution successful.
+2023-11-13 22:40:30.825 +03:00 [INF] Executing endpoint 'WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi)'
+2023-11-13 22:40:30.825 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAsync() on controller WebApi.Controllers.ProductController (ECommerce.WebApi).
+2023-11-13 22:40:30.834 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Name], [p].[Price], [p].[ImageUrl], [p].[Categories]
+FROM [Products] AS [p]
+ORDER BY [p].[Name]
+2023-11-13 22:40:30.835 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.Features.Products.Queries.GetAll.ProductGetAllDto, ECommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-13 22:40:30.836 +03:00 [INF] Executed action WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi) in 10.157ms
+2023-11-13 22:40:30.836 +03:00 [INF] Executed endpoint 'WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi)'
+2023-11-13 22:40:30.837 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Product/Pull - - - 200 - application/json;+charset=utf-8 16.6514ms
+2023-11-13 22:40:44.964 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Product/Pull - -
+2023-11-13 22:40:44.964 +03:00 [INF] CORS policy execution successful.
+2023-11-13 22:40:44.965 +03:00 [INF] Executing endpoint 'WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi)'
+2023-11-13 22:40:44.965 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAsync() on controller WebApi.Controllers.ProductController (ECommerce.WebApi).
+2023-11-13 22:40:44.969 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Name], [p].[Price], [p].[ImageUrl], [p].[Categories]
+FROM [Products] AS [p]
+ORDER BY [p].[Name]
+2023-11-13 22:40:44.969 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.Features.Products.Queries.GetAll.ProductGetAllDto, ECommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-13 22:40:44.969 +03:00 [INF] Executed action WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi) in 4.3035ms
+2023-11-13 22:40:44.970 +03:00 [INF] Executed endpoint 'WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi)'
+2023-11-13 22:40:44.970 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Product/Pull - - - 200 - application/json;+charset=utf-8 5.6705ms
+2023-11-13 22:44:36.937 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Product/Pull - -
+2023-11-13 22:44:36.937 +03:00 [INF] CORS policy execution successful.
+2023-11-13 22:44:36.937 +03:00 [INF] Executing endpoint 'WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi)'
+2023-11-13 22:44:36.938 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAsync() on controller WebApi.Controllers.ProductController (ECommerce.WebApi).
+2023-11-13 22:44:36.943 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Name], [p].[Price], [p].[ImageUrl], [p].[Categories]
+FROM [Products] AS [p]
+ORDER BY [p].[Name]
+2023-11-13 22:44:36.944 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.Features.Products.Queries.GetAll.ProductGetAllDto, ECommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-13 22:44:36.945 +03:00 [INF] Executed action WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi) in 6.8149ms
+2023-11-13 22:44:36.945 +03:00 [INF] Executed endpoint 'WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi)'
+2023-11-13 22:44:36.945 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Product/Pull - - - 200 - application/json;+charset=utf-8 8.3174ms
+2023-11-13 22:44:54.525 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Product/Pull - -
+2023-11-13 22:44:54.526 +03:00 [INF] CORS policy execution successful.
+2023-11-13 22:44:54.526 +03:00 [INF] Executing endpoint 'WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi)'
+2023-11-13 22:44:54.526 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAsync() on controller WebApi.Controllers.ProductController (ECommerce.WebApi).
+2023-11-13 22:44:54.533 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Name], [p].[Price], [p].[ImageUrl], [p].[Categories]
+FROM [Products] AS [p]
+ORDER BY [p].[Name]
+2023-11-13 22:44:54.534 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.Features.Products.Queries.GetAll.ProductGetAllDto, ECommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-13 22:44:54.534 +03:00 [INF] Executed action WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi) in 8.034ms
+2023-11-13 22:44:54.535 +03:00 [INF] Executed endpoint 'WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi)'
+2023-11-13 22:44:54.535 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Product/Pull - - - 200 - application/json;+charset=utf-8 9.9394ms
+2023-11-13 22:45:43.965 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Product/Pull - -
+2023-11-13 22:45:43.965 +03:00 [INF] CORS policy execution successful.
+2023-11-13 22:45:43.965 +03:00 [INF] Executing endpoint 'WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi)'
+2023-11-13 22:45:43.966 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAsync() on controller WebApi.Controllers.ProductController (ECommerce.WebApi).
+2023-11-13 22:45:43.979 +03:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Name], [p].[Price], [p].[ImageUrl], [p].[Categories]
+FROM [Products] AS [p]
+ORDER BY [p].[Name]
+2023-11-13 22:45:43.980 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.Features.Products.Queries.GetAll.ProductGetAllDto, ECommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-13 22:45:43.980 +03:00 [INF] Executed action WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi) in 14.2776ms
+2023-11-13 22:45:43.980 +03:00 [INF] Executed endpoint 'WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi)'
+2023-11-13 22:45:43.981 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Product/Pull - - - 200 - application/json;+charset=utf-8 15.7858ms
+2023-11-13 22:46:24.403 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Product/Pull - -
+2023-11-13 22:46:24.403 +03:00 [INF] CORS policy execution successful.
+2023-11-13 22:46:24.404 +03:00 [INF] Executing endpoint 'WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi)'
+2023-11-13 22:46:24.404 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAsync() on controller WebApi.Controllers.ProductController (ECommerce.WebApi).
+2023-11-13 22:46:24.408 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Name], [p].[Price], [p].[ImageUrl], [p].[Categories]
+FROM [Products] AS [p]
+ORDER BY [p].[Name]
+2023-11-13 22:46:24.409 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.Features.Products.Queries.GetAll.ProductGetAllDto, ECommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-13 22:46:24.409 +03:00 [INF] Executed action WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi) in 4.2702ms
+2023-11-13 22:46:24.409 +03:00 [INF] Executed endpoint 'WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi)'
+2023-11-13 22:46:24.410 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Product/Pull - - - 200 - application/json;+charset=utf-8 6.4412ms
+2023-11-13 22:46:59.489 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Product/Pull - -
+2023-11-13 22:46:59.490 +03:00 [INF] CORS policy execution successful.
+2023-11-13 22:46:59.490 +03:00 [INF] Executing endpoint 'WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi)'
+2023-11-13 22:46:59.491 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAsync() on controller WebApi.Controllers.ProductController (ECommerce.WebApi).
+2023-11-13 22:46:59.494 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Name], [p].[Price], [p].[ImageUrl], [p].[Categories]
+FROM [Products] AS [p]
+ORDER BY [p].[Name]
+2023-11-13 22:46:59.494 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.Features.Products.Queries.GetAll.ProductGetAllDto, ECommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-13 22:46:59.495 +03:00 [INF] Executed action WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi) in 3.9132ms
+2023-11-13 22:46:59.495 +03:00 [INF] Executed endpoint 'WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi)'
+2023-11-13 22:46:59.495 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Product/Pull - - - 200 - application/json;+charset=utf-8 6.0444ms
+2023-11-13 22:48:38.840 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Product/Pull - -
+2023-11-13 22:48:38.842 +03:00 [INF] CORS policy execution successful.
+2023-11-13 22:48:38.842 +03:00 [INF] Executing endpoint 'WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi)'
+2023-11-13 22:48:38.842 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAsync() on controller WebApi.Controllers.ProductController (ECommerce.WebApi).
+2023-11-13 22:48:38.847 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Name], [p].[Price], [p].[ImageUrl], [p].[Categories]
+FROM [Products] AS [p]
+ORDER BY [p].[Name]
+2023-11-13 22:48:38.848 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.Features.Products.Queries.GetAll.ProductGetAllDto, ECommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-13 22:48:38.849 +03:00 [INF] Executed action WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi) in 5.8956ms
+2023-11-13 22:48:38.849 +03:00 [INF] Executed endpoint 'WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi)'
+2023-11-13 22:48:38.849 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Product/Pull - - - 200 - application/json;+charset=utf-8 8.5733ms

@@ -15,7 +15,7 @@ const refreshAccessToken = async () => {
 
         const localJwt: LocalJwt = response.data;
 
-        localStorage.setItem("d1tech_user", JSON.stringify(localJwt));
+        localStorage.setItem("ecommerce_user", JSON.stringify(localJwt));
 
         return localJwt.accessToken;
 
@@ -28,7 +28,7 @@ const refreshAccessToken = async () => {
 
 api.interceptors.request.use((config)=>{
 
-    const jwtJson = localStorage.getItem("d1tech_user");
+    const jwtJson = localStorage.getItem("ecommerce_user");
 
     if(jwtJson){
 

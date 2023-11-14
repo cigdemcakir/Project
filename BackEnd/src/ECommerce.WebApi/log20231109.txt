@@ -1,0 +1,442 @@
+2023-11-09 10:14:30.332 +03:00 [INF] User profile is available. Using '/Users/Levent/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-11-09 10:14:31.436 +03:00 [INF] Now listening on: https://localhost:7109
+2023-11-09 10:14:31.436 +03:00 [INF] Now listening on: http://localhost:5223
+2023-11-09 10:14:31.438 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-09 10:14:31.438 +03:00 [INF] Hosting environment: Development
+2023-11-09 10:14:31.438 +03:00 [INF] Content root path: /Users/Levent/Desktop/Project/BackEnd/src/ECommerce.WebApi
+2023-11-09 10:14:32.426 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/index.html - -
+2023-11-09 10:14:32.732 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/index.html - - - 200 - text/html;charset=utf-8 310.5544ms
+2023-11-09 10:14:32.787 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/swagger-ui.css - -
+2023-11-09 10:14:32.791 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/swagger-ui-bundle.js - -
+2023-11-09 10:14:32.832 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/swagger-ui-standalone-preset.js - -
+2023-11-09 10:14:32.847 +03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-11-09 10:14:32.851 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/swagger-ui.css - - - 200 143943 text/css 63.3502ms
+2023-11-09 10:14:32.887 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-11-09 10:14:32.894 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/swagger-ui-standalone-preset.js - - - 200 339486 text/javascript 61.7798ms
+2023-11-09 10:14:32.898 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-11-09 10:14:32.898 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/swagger-ui-bundle.js - - - 200 1096145 text/javascript 107.1972ms
+2023-11-09 10:14:32.920 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/swagger-ui-standalone-preset.js - -
+2023-11-09 10:14:32.922 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-11-09 10:14:32.923 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/swagger-ui-standalone-preset.js - - - 200 339486 text/javascript 2.5896ms
+2023-11-09 10:14:32.930 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/swagger-ui-bundle.js - -
+2023-11-09 10:14:32.941 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-11-09 10:14:32.942 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/swagger-ui-bundle.js - - - 200 1096145 text/javascript 12.0409ms
+2023-11-09 10:14:33.315 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/v1/swagger.json - -
+2023-11-09 10:14:33.638 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 323.0593ms
+2023-11-09 10:19:20.250 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/api/Order/Add application/json 97
+2023-11-09 10:19:20.286 +03:00 [INF] CORS policy execution successful.
+2023-11-09 10:19:20.363 +03:00 [INF] Executing endpoint 'WebApi.Controllers.OrderController.CreateOrderAsync (ECommerce.WebApi)'
+2023-11-09 10:19:20.412 +03:00 [INF] Route matched with {action = "CreateOrder", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateOrderAsync(Application.Features.Orders.Commands.Add.OrderAddCommand) on controller WebApi.Controllers.OrderController (ECommerce.WebApi).
+2023-11-09 10:19:22.004 +03:00 [WRN] No store type was specified for the decimal property 'UnitPrice' on entity type 'OrderItem'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2023-11-09 10:19:22.932 +03:00 [ERR] An error occurred using the connection to database '' on server ''.
+2023-11-09 10:19:22.961 +03:00 [ERR] An exception occurred in the database while saving changes for context type 'Infrastructure.Persistence.Contexts.ApplicationDbContext'.
+System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2023-11-09 10:19:22.973 +03:00 [ERR] The ConnectionString property has not been initialized.
+System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Application.Features.Orders.Commands.Add.OrderAddCommandHandler.Handle(OrderAddCommand request, CancellationToken cancellationToken) in /Users/Levent/Desktop/Project/BackEnd/src/ECommerce.Application/Features/Orders/Commands/Add/OrderAddCommandHandler.cs:line 33
+   at Application.Common.Behaviours.ValidationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/Levent/Desktop/Project/BackEnd/src/ECommerce.Application/Common/Behaviours/ValidationBehaviour.cs:line 35
+   at WebApi.Controllers.OrderController.CreateOrderAsync(OrderAddCommand command) in /Users/Levent/Desktop/Project/BackEnd/src/ECommerce.WebApi/Controllers/OrderController.cs:line 12
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2023-11-09 10:19:22.989 +03:00 [INF] Executing ObjectResult, writing value of type 'Application.Common.Models.Errors.ApiErrorDto'.
+2023-11-09 10:19:22.999 +03:00 [INF] Executed action WebApi.Controllers.OrderController.CreateOrderAsync (ECommerce.WebApi) in 2582.2281ms
+2023-11-09 10:19:23.002 +03:00 [INF] Executed endpoint 'WebApi.Controllers.OrderController.CreateOrderAsync (ECommerce.WebApi)'
+2023-11-09 10:19:23.016 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7109/api/Order/Add application/json 97 - 500 - application/json;+charset=utf-8 2767.4190ms
+2023-11-09 10:30:32.431 +03:00 [INF] Application is shutting down...
+2023-11-09 11:37:49.953 +03:00 [INF] User profile is available. Using '/Users/Levent/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-11-09 11:37:54.692 +03:00 [INF] Now listening on: https://localhost:7109
+2023-11-09 11:37:54.697 +03:00 [INF] Now listening on: http://localhost:5223
+2023-11-09 11:37:54.710 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-09 11:37:54.711 +03:00 [INF] Hosting environment: Development
+2023-11-09 11:37:54.712 +03:00 [INF] Content root path: /Users/Levent/Desktop/Project/BackEnd/src/ECommerce.WebApi
+2023-11-09 11:38:01.153 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/index.html - -
+2023-11-09 11:38:01.372 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/index.html - - - 200 - text/html;charset=utf-8 222.9033ms
+2023-11-09 11:38:01.414 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/swagger-ui-standalone-preset.js - -
+2023-11-09 11:38:01.416 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/swagger-ui-bundle.js - -
+2023-11-09 11:38:01.471 +03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-11-09 11:38:01.471 +03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-11-09 11:38:01.476 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/swagger-ui-standalone-preset.js - - - 200 339486 text/javascript 62.6608ms
+2023-11-09 11:38:01.476 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/swagger-ui-bundle.js - - - 200 1096145 text/javascript 60.3188ms
+2023-11-09 11:38:02.727 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/v1/swagger.json - -
+2023-11-09 11:38:03.051 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 324.7199ms
+2023-11-09 11:38:05.755 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignInStart - -
+2023-11-09 11:38:05.843 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (ECommerce.WebApi)'
+2023-11-09 11:38:05.865 +03:00 [INF] Route matched with {action = "GoogleSignInStart", controller = "Authentication"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GoogleSignInStartAsync() on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-09 11:38:06.167 +03:00 [INF] Executing RedirectResult, redirecting to https://accounts.google.com/o/oauth2/v2/auth?client_id=424536091498-qqtt1rg7jtr9hr99hbrvokl7krq5ls6g.apps.googleusercontent.com&response_type=code&scope=openid%20email%20profile&access_type=offline&redirect_uri=https://localhost:7109/api/Authentication/GoogleSignIn.
+2023-11-09 11:38:06.172 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (ECommerce.WebApi) in 301.6288ms
+2023-11-09 11:38:06.176 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (ECommerce.WebApi)'
+2023-11-09 11:38:06.180 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignInStart - - - 302 0 - 424.5833ms
+2023-11-09 11:38:09.890 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignIn?code=4%2F0AfJohXmQ-NfZ9DRygZPd4Y-VmJCX52uKiGK0YUFmYzMDmbA4j1bJMibWUV2SULix1g742A&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=1&prompt=consent - -
+2023-11-09 11:38:09.904 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInAsync (ECommerce.WebApi)'
+2023-11-09 11:38:09.939 +03:00 [INF] Route matched with {action = "GoogleSignIn", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GoogleSignInAsync(System.String, System.Threading.CancellationToken) on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-09 11:38:13.956 +03:00 [ERR] An error occurred using the connection to database '' on server ''.
+2023-11-09 11:38:13.982 +03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'Infrastructure.Persistence.Contexts.IdentityContext'.
+System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2023-11-09 11:38:14.001 +03:00 [ERR] The ConnectionString property has not been initialized.
+System.InvalidOperationException: The ConnectionString property has not been initialized.
+   at Microsoft.Data.SqlClient.SqlConnection.PermissionDemand()
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.PermissionDemand(DbConnection outerConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.InternalOpenAsync(CancellationToken cancellationToken)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.FindByEmailAsync(String email)
+   at Infrastructure.Services.AuthenticationManager.SocialLoginAsync(String email, String firstName, String lastName, CancellationToken cancellationToken) in /Users/Levent/Desktop/Project/BackEnd/src/Ecommerce.Infrastructure/Services/AuthenticationManager.cs:line 77
+   at WebApi.Controllers.AuthenticationController.GoogleSignInAsync(String code, CancellationToken cancellationToken) in /Users/Levent/Desktop/Project/BackEnd/src/ECommerce.WebApi/Controllers/AuthenticationController.cs:line 86
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2023-11-09 11:38:14.024 +03:00 [INF] Executing ObjectResult, writing value of type 'Application.Common.Models.Errors.ApiErrorDto'.
+2023-11-09 11:38:14.044 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.GoogleSignInAsync (ECommerce.WebApi) in 4103.9272ms
+2023-11-09 11:38:14.047 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInAsync (ECommerce.WebApi)'
+2023-11-09 11:38:14.103 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignIn?code=4%2F0AfJohXmQ-NfZ9DRygZPd4Y-VmJCX52uKiGK0YUFmYzMDmbA4j1bJMibWUV2SULix1g742A&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=1&prompt=consent - - - 500 - application/json;+charset=utf-8 4213.1277ms
+2023-11-09 11:38:14.313 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/favicon.ico - -
+2023-11-09 11:38:14.322 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/favicon.ico - - - 404 0 - 8.5199ms
+2023-11-09 11:38:45.805 +03:00 [INF] Application is shutting down...
+2023-11-09 11:41:11.841 +03:00 [INF] User profile is available. Using '/Users/Levent/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-11-09 11:41:13.000 +03:00 [INF] Now listening on: https://localhost:7109
+2023-11-09 11:41:13.000 +03:00 [INF] Now listening on: http://localhost:5223
+2023-11-09 11:41:13.003 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-09 11:41:13.003 +03:00 [INF] Hosting environment: Development
+2023-11-09 11:41:13.003 +03:00 [INF] Content root path: /Users/Levent/Desktop/Project/BackEnd/src/ECommerce.WebApi
+2023-11-09 11:41:14.113 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/index.html - -
+2023-11-09 11:41:14.597 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/index.html - - - 200 - text/html;charset=utf-8 492.9432ms
+2023-11-09 11:41:15.062 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/v1/swagger.json - -
+2023-11-09 11:41:15.238 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 176.0602ms
+2023-11-09 11:41:44.284 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignInStart - -
+2023-11-09 11:41:44.786 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (ECommerce.WebApi)'
+2023-11-09 11:41:44.841 +03:00 [INF] Route matched with {action = "GoogleSignInStart", controller = "Authentication"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GoogleSignInStartAsync() on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-09 11:41:45.188 +03:00 [INF] Executing RedirectResult, redirecting to https://accounts.google.com/o/oauth2/v2/auth?client_id=424536091498-qqtt1rg7jtr9hr99hbrvokl7krq5ls6g.apps.googleusercontent.com&response_type=code&scope=openid%20email%20profile&access_type=offline&redirect_uri=https://localhost:7109/api/Authentication/GoogleSignIn.
+2023-11-09 11:41:45.194 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (ECommerce.WebApi) in 347.9268ms
+2023-11-09 11:41:45.198 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (ECommerce.WebApi)'
+2023-11-09 11:41:45.214 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignInStart - - - 302 0 - 950.6819ms
+2023-11-09 11:41:49.189 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignIn?code=4%2F0AfJohXnwdn-eKFFf-FofZ1x4RRPSBLKF8SwzhTljfTNVhhKCxcaRs-iJqshYCpvfBTkyDA&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=1&prompt=consent - -
+2023-11-09 11:41:49.204 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInAsync (ECommerce.WebApi)'
+2023-11-09 11:41:49.258 +03:00 [INF] Route matched with {action = "GoogleSignIn", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GoogleSignInAsync(System.String, System.Threading.CancellationToken) on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-09 11:41:54.457 +03:00 [INF] Executed DbCommand (368ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedByUserId], [a].[CreatedOn], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedByUserId], [a].[ModifiedOn], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-11-09 11:41:54.926 +03:00 [INF] Executing RedirectResult, redirecting to http://localhost:5173/social-login?access_token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI4NzRhNTcxMi1jMmNhLTQ1ZTItODdmYS0zNWU2MDUwMjUzZDIiLCJlbWFpbCI6IjRzb2Z0d2FyZWhvdXNlNEBnbWFpbC5jb20iLCJzdWIiOiI4NzRhNTcxMi1jMmNhLTQ1ZTItODdmYS0zNWU2MDUwMjUzZDIiLCJnaXZlbl9uYW1lIjoiU29mdHdhcmUiLCJmYW1pbHlfbmFtZSI6IkhvdXNlIiwianRpIjoiZTg2ZjgxYzEtMTg3Zi00NzVlLWIwYTctMzM4OWIyOWU1Njc2IiwiZXhwIjoxNjk5NTIyOTE0LCJpc3MiOiJDcmF3bGVyIiwiYXVkIjoiQ3Jhd2xlciJ9.ekHUhE6o8-RWvh3_HS1JVJ9v1SE7MZMfdTqbm-j89xw&expiry_date=-8585020839708010288.
+2023-11-09 11:41:54.928 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.GoogleSignInAsync (ECommerce.WebApi) in 5668.8595ms
+2023-11-09 11:41:54.930 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInAsync (ECommerce.WebApi)'
+2023-11-09 11:41:54.971 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignIn?code=4%2F0AfJohXnwdn-eKFFf-FofZ1x4RRPSBLKF8SwzhTljfTNVhhKCxcaRs-iJqshYCpvfBTkyDA&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=1&prompt=consent - - - 302 0 - 5781.2923ms
+2023-11-09 11:42:08.476 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignIn?code=4%2F0AfJohXmTuUwo5OHZh_Wd46dbmB9ws2h7VwYssRPvwArPzp-q0Nyj5zQJf8oC0A7IbyVRIw&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=1&prompt=consent - -
+2023-11-09 11:42:08.484 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInAsync (ECommerce.WebApi)'
+2023-11-09 11:42:08.485 +03:00 [INF] Route matched with {action = "GoogleSignIn", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GoogleSignInAsync(System.String, System.Threading.CancellationToken) on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-09 11:42:08.929 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedByUserId], [a].[CreatedOn], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedByUserId], [a].[ModifiedOn], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-11-09 11:42:08.934 +03:00 [INF] Executing RedirectResult, redirecting to http://localhost:5173/social-login?access_token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI4NzRhNTcxMi1jMmNhLTQ1ZTItODdmYS0zNWU2MDUwMjUzZDIiLCJlbWFpbCI6IjRzb2Z0d2FyZWhvdXNlNEBnbWFpbC5jb20iLCJzdWIiOiI4NzRhNTcxMi1jMmNhLTQ1ZTItODdmYS0zNWU2MDUwMjUzZDIiLCJnaXZlbl9uYW1lIjoiU29mdHdhcmUiLCJmYW1pbHlfbmFtZSI6IkhvdXNlIiwianRpIjoiMTAwMTI4MzgtMWZlYy00MmYzLWJiNzEtYTIzOTBkMmYwNGVlIiwiZXhwIjoxNjk5NTIyOTI4LCJpc3MiOiJDcmF3bGVyIiwiYXVkIjoiQ3Jhd2xlciJ9.ItNVVSbmNaFIvtsUOwPrMmhiGCG8mDk4Yr2eWO5BOd8&expiry_date=-8585020839565446808.
+2023-11-09 11:42:08.934 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.GoogleSignInAsync (ECommerce.WebApi) in 449.3586ms
+2023-11-09 11:42:08.935 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInAsync (ECommerce.WebApi)'
+2023-11-09 11:42:08.936 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignIn?code=4%2F0AfJohXmTuUwo5OHZh_Wd46dbmB9ws2h7VwYssRPvwArPzp-q0Nyj5zQJf8oC0A7IbyVRIw&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=1&prompt=consent - - - 302 0 - 460.3191ms
+2023-11-09 13:15:30.895 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignInStart - -
+2023-11-09 13:15:30.977 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (ECommerce.WebApi)'
+2023-11-09 13:15:31.015 +03:00 [INF] Route matched with {action = "GoogleSignInStart", controller = "Authentication"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GoogleSignInStartAsync() on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-09 13:15:31.080 +03:00 [INF] Executing RedirectResult, redirecting to https://accounts.google.com/o/oauth2/v2/auth?client_id=424536091498-qqtt1rg7jtr9hr99hbrvokl7krq5ls6g.apps.googleusercontent.com&response_type=code&scope=openid%20email%20profile&access_type=offline&redirect_uri=https://localhost:7109/api/Authentication/GoogleSignIn.
+2023-11-09 13:15:31.086 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (ECommerce.WebApi) in 60.6659ms
+2023-11-09 13:15:31.089 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (ECommerce.WebApi)'
+2023-11-09 13:15:31.097 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignInStart - - - 302 0 - 213.8745ms
+2023-11-09 13:15:35.361 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignIn?code=4%2F0AfJohXmFcB4ocTSmmS14PEUnF_-duvDoRS4Ul-uV2tJ6HFAtyX87DW2ekD27UG4GskZ8yw&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=1&prompt=consent - -
+2023-11-09 13:15:35.368 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInAsync (ECommerce.WebApi)'
+2023-11-09 13:15:35.369 +03:00 [INF] Route matched with {action = "GoogleSignIn", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GoogleSignInAsync(System.String, System.Threading.CancellationToken) on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-09 13:15:36.630 +03:00 [INF] Executed DbCommand (74ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedByUserId], [a].[CreatedOn], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedByUserId], [a].[ModifiedOn], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-11-09 13:15:36.659 +03:00 [INF] Executing RedirectResult, redirecting to http://localhost:5173/social-login?access_token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI4NzRhNTcxMi1jMmNhLTQ1ZTItODdmYS0zNWU2MDUwMjUzZDIiLCJlbWFpbCI6IjRzb2Z0d2FyZWhvdXNlNEBnbWFpbC5jb20iLCJzdWIiOiI4NzRhNTcxMi1jMmNhLTQ1ZTItODdmYS0zNWU2MDUwMjUzZDIiLCJnaXZlbl9uYW1lIjoiU29mdHdhcmUiLCJmYW1pbHlfbmFtZSI6IkhvdXNlIiwianRpIjoiY2Q0YTNiMGMtN2Y3Zi00ODU4LTkxZmYtYmE2MWI5YjE3YTFlIiwiZXhwIjoxNjk5NTI4NTM2LCJpc3MiOiJDcmF3bGVyIiwiYXVkIjoiQ3Jhd2xlciJ9.ZGenjx6ReykL4s4YW5BD5SsM3OxDW98kLpZwinRhVZI&expiry_date=-8585020783488284928.
+2023-11-09 13:15:36.660 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.GoogleSignInAsync (ECommerce.WebApi) in 1289.2038ms
+2023-11-09 13:15:36.660 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInAsync (ECommerce.WebApi)'
+2023-11-09 13:15:36.661 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignIn?code=4%2F0AfJohXmFcB4ocTSmmS14PEUnF_-duvDoRS4Ul-uV2tJ6HFAtyX87DW2ekD27UG4GskZ8yw&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=1&prompt=consent - - - 302 0 - 1300.6751ms
+2023-11-09 13:15:39.795 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/Hubs/BookHub/negotiate?negotiateVersion=1 - -
+2023-11-09 13:15:39.803 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Books - -
+2023-11-09 13:15:39.814 +03:00 [INF] CORS policy execution successful.
+2023-11-09 13:15:39.814 +03:00 [INF] CORS policy execution successful.
+2023-11-09 13:15:39.824 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/Hubs/BookHub/negotiate?negotiateVersion=1 - - - 204 - - 29.2046ms
+2023-11-09 13:15:39.825 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Books - - - 404 0 - 21.6602ms
+2023-11-09 13:15:39.840 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/Hubs/BookHub/negotiate?negotiateVersion=1 - 0
+2023-11-09 13:15:39.840 +03:00 [INF] CORS policy execution successful.
+2023-11-09 13:15:39.841 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7109/Hubs/BookHub/negotiate?negotiateVersion=1 - 0 - 404 0 - 1.3312ms
+2023-11-09 13:15:45.260 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/Hubs/BookHub/negotiate?negotiateVersion=1 - -
+2023-11-09 13:15:45.261 +03:00 [INF] CORS policy execution successful.
+2023-11-09 13:15:45.262 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Books - -
+2023-11-09 13:15:45.262 +03:00 [INF] CORS policy execution successful.
+2023-11-09 13:15:45.262 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/Hubs/BookHub/negotiate?negotiateVersion=1 - - - 204 - - 2.1885ms
+2023-11-09 13:15:45.263 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Books - - - 404 0 - 0.7456ms
+2023-11-09 13:15:45.266 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/Hubs/BookHub/negotiate?negotiateVersion=1 - 0
+2023-11-09 13:15:45.266 +03:00 [INF] CORS policy execution successful.
+2023-11-09 13:15:45.267 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7109/Hubs/BookHub/negotiate?negotiateVersion=1 - 0 - 404 0 - 0.8810ms
+2023-11-09 13:16:11.875 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignInStart - -
+2023-11-09 13:16:11.990 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (ECommerce.WebApi)'
+2023-11-09 13:16:11.993 +03:00 [INF] Route matched with {action = "GoogleSignInStart", controller = "Authentication"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GoogleSignInStartAsync() on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-09 13:16:12.036 +03:00 [INF] Executing RedirectResult, redirecting to https://accounts.google.com/o/oauth2/v2/auth?client_id=424536091498-qqtt1rg7jtr9hr99hbrvokl7krq5ls6g.apps.googleusercontent.com&response_type=code&scope=openid%20email%20profile&access_type=offline&redirect_uri=https://localhost:7109/api/Authentication/GoogleSignIn.
+2023-11-09 13:16:12.037 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (ECommerce.WebApi) in 43.4432ms
+2023-11-09 13:16:12.039 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (ECommerce.WebApi)'
+2023-11-09 13:16:12.053 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignInStart - - - 302 0 - 191.8972ms
+2023-11-09 13:16:15.359 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignIn?code=4%2F0AfJohXmCMum5P0_NVoBDbTwHp612b-BnIic9AVsd-pibQlHsLbrBKmVGfV76rYqBdDPVyA&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=1&prompt=consent - -
+2023-11-09 13:16:15.361 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInAsync (ECommerce.WebApi)'
+2023-11-09 13:16:15.361 +03:00 [INF] Route matched with {action = "GoogleSignIn", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GoogleSignInAsync(System.String, System.Threading.CancellationToken) on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-09 13:16:15.829 +03:00 [INF] Executed DbCommand (16ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedByUserId], [a].[CreatedOn], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedByUserId], [a].[ModifiedOn], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-11-09 13:16:15.842 +03:00 [INF] Executing RedirectResult, redirecting to http://localhost:5173/social-login?access_token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI4NzRhNTcxMi1jMmNhLTQ1ZTItODdmYS0zNWU2MDUwMjUzZDIiLCJlbWFpbCI6IjRzb2Z0d2FyZWhvdXNlNEBnbWFpbC5jb20iLCJzdWIiOiI4NzRhNTcxMi1jMmNhLTQ1ZTItODdmYS0zNWU2MDUwMjUzZDIiLCJnaXZlbl9uYW1lIjoiU29mdHdhcmUiLCJmYW1pbHlfbmFtZSI6IkhvdXNlIiwianRpIjoiNDA5OTgxNTUtNGZkOC00NDUzLThlN2QtODY3ZThhZmNmOGY2IiwiZXhwIjoxNjk5NTI4NTc1LCJpc3MiOiJDcmF3bGVyIiwiYXVkIjoiQ3Jhd2xlciJ9.zLCkQ0bPdtYWl5QK8z_phpr2Z7oCfdyXpNUM4lw5BQI&expiry_date=-8585020783096394148.
+2023-11-09 13:16:15.842 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.GoogleSignInAsync (ECommerce.WebApi) in 480.8589ms
+2023-11-09 13:16:15.842 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInAsync (ECommerce.WebApi)'
+2023-11-09 13:16:15.846 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignIn?code=4%2F0AfJohXmCMum5P0_NVoBDbTwHp612b-BnIic9AVsd-pibQlHsLbrBKmVGfV76rYqBdDPVyA&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=1&prompt=consent - - - 302 0 - 486.2721ms
+2023-11-09 13:16:19.560 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/Hubs/BookHub/negotiate?negotiateVersion=1 - -
+2023-11-09 13:16:19.560 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Books - -
+2023-11-09 13:16:19.566 +03:00 [INF] CORS policy execution successful.
+2023-11-09 13:16:19.566 +03:00 [INF] CORS policy execution successful.
+2023-11-09 13:16:19.574 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/Hubs/BookHub/negotiate?negotiateVersion=1 - - - 204 - - 12.6078ms
+2023-11-09 13:16:19.574 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Books - - - 404 0 - 14.1932ms
+2023-11-09 13:16:19.580 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/Hubs/BookHub/negotiate?negotiateVersion=1 - 0
+2023-11-09 13:16:19.580 +03:00 [INF] CORS policy execution successful.
+2023-11-09 13:16:19.581 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7109/Hubs/BookHub/negotiate?negotiateVersion=1 - 0 - 404 0 - 0.8490ms
+2023-11-09 13:17:29.889 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignInStart - -
+2023-11-09 13:17:29.956 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (ECommerce.WebApi)'
+2023-11-09 13:17:29.973 +03:00 [INF] Route matched with {action = "GoogleSignInStart", controller = "Authentication"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GoogleSignInStartAsync() on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-09 13:17:30.031 +03:00 [INF] Executing RedirectResult, redirecting to https://accounts.google.com/o/oauth2/v2/auth?client_id=424536091498-qqtt1rg7jtr9hr99hbrvokl7krq5ls6g.apps.googleusercontent.com&response_type=code&scope=openid%20email%20profile&access_type=offline&redirect_uri=https://localhost:7109/api/Authentication/GoogleSignIn.
+2023-11-09 13:17:30.033 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (ECommerce.WebApi) in 44.9149ms
+2023-11-09 13:17:30.039 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (ECommerce.WebApi)'
+2023-11-09 13:17:30.044 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignInStart - - - 302 0 - 156.0844ms
+2023-11-09 13:17:33.835 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignIn?code=4%2F0AfJohXnS2VCGYPg2Sw-wmdozCdFF949jG6peP3pt4BTlj5wKu98mRkTQpF0fJN5kWUMCVA&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=1&prompt=consent - -
+2023-11-09 13:17:33.840 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInAsync (ECommerce.WebApi)'
+2023-11-09 13:17:33.841 +03:00 [INF] Route matched with {action = "GoogleSignIn", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GoogleSignInAsync(System.String, System.Threading.CancellationToken) on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-09 13:17:34.207 +03:00 [INF] Executed DbCommand (12ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedByUserId], [a].[CreatedOn], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedByUserId], [a].[ModifiedOn], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-11-09 13:17:34.233 +03:00 [INF] Executing RedirectResult, redirecting to http://localhost:5173/social-login?access_token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI4NzRhNTcxMi1jMmNhLTQ1ZTItODdmYS0zNWU2MDUwMjUzZDIiLCJlbWFpbCI6IjRzb2Z0d2FyZWhvdXNlNEBnbWFpbC5jb20iLCJzdWIiOiI4NzRhNTcxMi1jMmNhLTQ1ZTItODdmYS0zNWU2MDUwMjUzZDIiLCJnaXZlbl9uYW1lIjoiU29mdHdhcmUiLCJmYW1pbHlfbmFtZSI6IkhvdXNlIiwianRpIjoiYTI3NTMwZjEtMjE4Zi00NmQ2LTgxNTUtMzY3YzY1N2YwMTBhIiwiZXhwIjoxNjk5NTI4NjU0LCJpc3MiOiJDcmF3bGVyIiwiYXVkIjoiQ3Jhd2xlciJ9.M5pZm4oy5VnxSqspuJ4izG4IJGLHz_3DioUH85uPA38&expiry_date=-8585020782312593778.
+2023-11-09 13:17:34.234 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.GoogleSignInAsync (ECommerce.WebApi) in 390.8477ms
+2023-11-09 13:17:34.234 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInAsync (ECommerce.WebApi)'
+2023-11-09 13:17:34.236 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignIn?code=4%2F0AfJohXnS2VCGYPg2Sw-wmdozCdFF949jG6peP3pt4BTlj5wKu98mRkTQpF0fJN5kWUMCVA&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=1&prompt=consent - - - 302 0 - 400.6408ms
+2023-11-09 13:17:40.914 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Books - -
+2023-11-09 13:17:40.914 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/Hubs/BookHub/negotiate?negotiateVersion=1 - -
+2023-11-09 13:17:40.926 +03:00 [INF] CORS policy execution successful.
+2023-11-09 13:17:40.925 +03:00 [INF] CORS policy execution successful.
+2023-11-09 13:17:41.015 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/Hubs/BookHub/negotiate?negotiateVersion=1 - - - 204 - - 102.3925ms
+2023-11-09 13:17:41.016 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Books - - - 404 0 - 103.4483ms
+2023-11-09 13:17:41.032 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/Hubs/BookHub/negotiate?negotiateVersion=1 - 0
+2023-11-09 13:17:41.037 +03:00 [INF] CORS policy execution successful.
+2023-11-09 13:17:41.042 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7109/Hubs/BookHub/negotiate?negotiateVersion=1 - 0 - 404 0 - 9.6014ms
+2023-11-09 13:17:47.968 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Books - -
+2023-11-09 13:17:47.968 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/Hubs/BookHub/negotiate?negotiateVersion=1 - -
+2023-11-09 13:17:47.969 +03:00 [INF] CORS policy execution successful.
+2023-11-09 13:17:47.969 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/Hubs/BookHub/negotiate?negotiateVersion=1 - - - 204 - - 0.6523ms
+2023-11-09 13:17:47.970 +03:00 [INF] CORS policy execution successful.
+2023-11-09 13:17:47.971 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/Hubs/BookHub/negotiate?negotiateVersion=1 - 0
+2023-11-09 13:17:47.971 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Books - - - 404 0 - 3.1307ms
+2023-11-09 13:17:47.972 +03:00 [INF] CORS policy execution successful.
+2023-11-09 13:17:47.973 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7109/Hubs/BookHub/negotiate?negotiateVersion=1 - 0 - 404 0 - 1.9059ms
+2023-11-09 13:19:24.651 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/api/Authentication/Login - -
+2023-11-09 13:19:24.667 +03:00 [INF] CORS policy execution successful.
+2023-11-09 13:19:24.669 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/api/Authentication/Login - - - 204 - - 18.1961ms
+2023-11-09 13:19:24.674 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/api/Authentication/Login application/json 67
+2023-11-09 13:19:24.678 +03:00 [INF] CORS policy execution successful.
+2023-11-09 13:19:24.917 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi)'
+2023-11-09 13:19:24.990 +03:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginAsync(Application.Features.Auth.Commands.Login.AuthLoginCommand) on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-09 13:19:26.048 +03:00 [INF] Executed DbCommand (387ms) [Parameters=[@__email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]
+        WHERE [a].[Email] = @__email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-11-09 13:19:26.073 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedByUserId], [a].[CreatedOn], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedByUserId], [a].[ModifiedOn], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-11-09 13:19:26.184 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Application.Common.Models.Errors.ApiErrorDto'.
+2023-11-09 13:19:26.242 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi) in 1251.9563ms
+2023-11-09 13:19:26.248 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi)'
+2023-11-09 13:19:26.249 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7109/api/Authentication/Login application/json 67 - 400 - application/json;+charset=utf-8 1575.5121ms
+2023-11-09 13:19:28.187 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/api/Authentication/Login application/json 67
+2023-11-09 13:19:28.190 +03:00 [INF] CORS policy execution successful.
+2023-11-09 13:19:28.191 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi)'
+2023-11-09 13:19:28.191 +03:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginAsync(Application.Features.Auth.Commands.Login.AuthLoginCommand) on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-09 13:19:28.200 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]
+        WHERE [a].[Email] = @__email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-11-09 13:19:28.204 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedByUserId], [a].[CreatedOn], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedByUserId], [a].[ModifiedOn], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-11-09 13:19:28.207 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Application.Common.Models.Errors.ApiErrorDto'.
+2023-11-09 13:19:28.208 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi) in 16.3805ms
+2023-11-09 13:19:28.208 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi)'
+2023-11-09 13:19:28.208 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7109/api/Authentication/Login application/json 67 - 400 - application/json;+charset=utf-8 21.1742ms
+2023-11-09 13:19:29.721 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignInStart - -
+2023-11-09 13:19:29.722 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (ECommerce.WebApi)'
+2023-11-09 13:19:29.722 +03:00 [INF] Route matched with {action = "GoogleSignInStart", controller = "Authentication"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GoogleSignInStartAsync() on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-09 13:19:29.724 +03:00 [INF] Executing RedirectResult, redirecting to https://accounts.google.com/o/oauth2/v2/auth?client_id=424536091498-qqtt1rg7jtr9hr99hbrvokl7krq5ls6g.apps.googleusercontent.com&response_type=code&scope=openid%20email%20profile&access_type=offline&redirect_uri=https://localhost:7109/api/Authentication/GoogleSignIn.
+2023-11-09 13:19:29.725 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (ECommerce.WebApi) in 1.7797ms
+2023-11-09 13:19:29.725 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (ECommerce.WebApi)'
+2023-11-09 13:19:29.725 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignInStart - - - 302 0 - 4.3360ms
+2023-11-09 13:19:33.000 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignIn?code=4%2F0AfJohXn5OFqB7l4vQw8gJLtK00s7H_tQsypulvp_9Zn_-uQzMX9l0uij8Gf4k5L3rADlYg&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=1&prompt=consent - -
+2023-11-09 13:19:33.010 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInAsync (ECommerce.WebApi)'
+2023-11-09 13:19:33.013 +03:00 [INF] Route matched with {action = "GoogleSignIn", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GoogleSignInAsync(System.String, System.Threading.CancellationToken) on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-09 13:19:33.621 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedByUserId], [a].[CreatedOn], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedByUserId], [a].[ModifiedOn], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-11-09 13:19:33.628 +03:00 [INF] Executing RedirectResult, redirecting to http://localhost:5173/social-login?access_token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI4NzRhNTcxMi1jMmNhLTQ1ZTItODdmYS0zNWU2MDUwMjUzZDIiLCJlbWFpbCI6IjRzb2Z0d2FyZWhvdXNlNEBnbWFpbC5jb20iLCJzdWIiOiI4NzRhNTcxMi1jMmNhLTQ1ZTItODdmYS0zNWU2MDUwMjUzZDIiLCJnaXZlbl9uYW1lIjoiU29mdHdhcmUiLCJmYW1pbHlfbmFtZSI6IkhvdXNlIiwianRpIjoiOWE5MTFmZGUtOGI0My00NTE5LTg5M2YtZjY3N2ZhMTMyNzQ2IiwiZXhwIjoxNjk5NTI4NzczLCJpc3MiOiJDcmF3bGVyIiwiYXVkIjoiQ3Jhd2xlciJ9.pEp0XUX_HYbEvA0ImoNOuvJ2Zq2WUkPFARymZgVZpCE&expiry_date=-8585020781118524128.
+2023-11-09 13:19:33.628 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.GoogleSignInAsync (ECommerce.WebApi) in 613.984ms
+2023-11-09 13:19:33.628 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInAsync (ECommerce.WebApi)'
+2023-11-09 13:19:33.628 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignIn?code=4%2F0AfJohXn5OFqB7l4vQw8gJLtK00s7H_tQsypulvp_9Zn_-uQzMX9l0uij8Gf4k5L3rADlYg&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=1&prompt=consent - - - 302 0 - 629.5037ms
+2023-11-09 13:19:42.589 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Books - -
+2023-11-09 13:19:42.589 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/Hubs/BookHub/negotiate?negotiateVersion=1 - -
+2023-11-09 13:19:42.599 +03:00 [INF] CORS policy execution successful.
+2023-11-09 13:19:42.599 +03:00 [INF] CORS policy execution successful.
+2023-11-09 13:19:42.602 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/Hubs/BookHub/negotiate?negotiateVersion=1 - - - 204 - - 13.6768ms
+2023-11-09 13:19:42.602 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Books - - - 404 0 - 14.1760ms
+2023-11-09 13:19:42.605 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/Hubs/BookHub/negotiate?negotiateVersion=1 - 0
+2023-11-09 13:19:42.605 +03:00 [INF] CORS policy execution successful.
+2023-11-09 13:19:42.606 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7109/Hubs/BookHub/negotiate?negotiateVersion=1 - 0 - 404 0 - 1.1956ms
+2023-11-09 13:19:53.878 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/Hubs/BookHub/negotiate?negotiateVersion=1 - -
+2023-11-09 13:19:53.879 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Books - -
+2023-11-09 13:19:53.880 +03:00 [INF] CORS policy execution successful.
+2023-11-09 13:19:53.880 +03:00 [INF] CORS policy execution successful.
+2023-11-09 13:19:53.881 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Books - - - 404 0 - 1.8072ms
+2023-11-09 13:19:53.881 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/Hubs/BookHub/negotiate?negotiateVersion=1 - - - 204 - - 2.5968ms
+2023-11-09 13:19:53.886 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/Hubs/BookHub/negotiate?negotiateVersion=1 - 0
+2023-11-09 13:19:53.886 +03:00 [INF] CORS policy execution successful.
+2023-11-09 13:19:53.887 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7109/Hubs/BookHub/negotiate?negotiateVersion=1 - 0 - 404 0 - 1.3488ms
+2023-11-09 13:21:13.351 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Books - -
+2023-11-09 13:21:13.351 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/Hubs/BookHub/negotiate?negotiateVersion=1 - -
+2023-11-09 13:21:13.361 +03:00 [INF] CORS policy execution successful.
+2023-11-09 13:21:13.361 +03:00 [INF] CORS policy execution successful.
+2023-11-09 13:21:13.367 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/Hubs/BookHub/negotiate?negotiateVersion=1 - - - 204 - - 16.4483ms
+2023-11-09 13:21:13.373 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/Hubs/BookHub/negotiate?negotiateVersion=1 - 0
+2023-11-09 13:21:13.373 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Books - - - 404 0 - 22.3039ms
+2023-11-09 13:21:13.373 +03:00 [INF] CORS policy execution successful.
+2023-11-09 13:21:13.375 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7109/Hubs/BookHub/negotiate?negotiateVersion=1 - 0 - 404 0 - 2.4780ms
+2023-11-09 13:27:36.030 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignInStart - -
+2023-11-09 13:27:36.044 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (ECommerce.WebApi)'
+2023-11-09 13:27:36.048 +03:00 [INF] Route matched with {action = "GoogleSignInStart", controller = "Authentication"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GoogleSignInStartAsync() on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-09 13:27:36.064 +03:00 [INF] Executing RedirectResult, redirecting to https://accounts.google.com/o/oauth2/v2/auth?client_id=424536091498-qqtt1rg7jtr9hr99hbrvokl7krq5ls6g.apps.googleusercontent.com&response_type=code&scope=openid%20email%20profile&access_type=offline&redirect_uri=https://localhost:7109/api/Authentication/GoogleSignIn.
+2023-11-09 13:27:36.065 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (ECommerce.WebApi) in 16.274ms
+2023-11-09 13:27:36.065 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInStartAsync (ECommerce.WebApi)'
+2023-11-09 13:27:36.065 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignInStart - - - 302 0 - 35.3959ms
+2023-11-09 13:27:40.242 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignIn?code=4%2F0AfJohXmcWz9Pwyyr93bIjPoZ6aupZ064N82Csa4S09G6Lm6e8zZ1CsB29_wIcIXmS-QT7Q&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=1&prompt=consent - -
+2023-11-09 13:27:40.245 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInAsync (ECommerce.WebApi)'
+2023-11-09 13:27:40.245 +03:00 [INF] Route matched with {action = "GoogleSignIn", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GoogleSignInAsync(System.String, System.Threading.CancellationToken) on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-09 13:27:40.674 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedByUserId], [a].[CreatedOn], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedByUserId], [a].[ModifiedOn], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-11-09 13:27:40.678 +03:00 [INF] Executing RedirectResult, redirecting to http://localhost:5173/social-login?access_token=eyJhbGciOiJodHRwOi8vd3d3LnczLm9yZy8yMDAxLzA0L3htbGRzaWctbW9yZSNobWFjLXNoYTI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI4NzRhNTcxMi1jMmNhLTQ1ZTItODdmYS0zNWU2MDUwMjUzZDIiLCJlbWFpbCI6IjRzb2Z0d2FyZWhvdXNlNEBnbWFpbC5jb20iLCJzdWIiOiI4NzRhNTcxMi1jMmNhLTQ1ZTItODdmYS0zNWU2MDUwMjUzZDIiLCJnaXZlbl9uYW1lIjoiU29mdHdhcmUiLCJmYW1pbHlfbmFtZSI6IkhvdXNlIiwianRpIjoiOTdmMDg5ZTgtNWFjMS00MTY5LWI3MDUtOWQ5OGEwYmUyZTAwIiwiZXhwIjoxNjk5NTI5MjYwLCJpc3MiOiJDcmF3bGVyIiwiYXVkIjoiQ3Jhd2xlciJ9.0Y_yUUC2AybmZzrd0Gfx8mTBFvENBgk9mXksZczHZDk&expiry_date=-8585020776247996128.
+2023-11-09 13:27:40.679 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.GoogleSignInAsync (ECommerce.WebApi) in 433.5247ms
+2023-11-09 13:27:40.679 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInAsync (ECommerce.WebApi)'
+2023-11-09 13:27:40.679 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignIn?code=4%2F0AfJohXmcWz9Pwyyr93bIjPoZ6aupZ064N82Csa4S09G6Lm6e8zZ1CsB29_wIcIXmS-QT7Q&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=1&prompt=consent - - - 302 0 - 436.9575ms
+2023-11-09 14:44:07.193 +03:00 [INF] Application is shutting down...

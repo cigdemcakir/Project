@@ -9,12 +9,12 @@ namespace Application.Features.Orders.Queries.GetAll
 {
     public class OrderGetAllQuery : IRequest<List<OrderGetAllDto>>
     {
-        public Guid UserId { get; set; }
-        
-        public OrderGetAllQuery(Guid userId)
-        {
-            UserId = userId;
-        }
-        
+        // public Guid UserId { get; set; }
+        //
+        // public OrderGetAllQuery(Guid userId)
+        // {
+        //     UserId = userId;
+        // }
+        //
     }
 }

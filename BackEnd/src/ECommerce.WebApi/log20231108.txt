@@ -1138,3 +1138,4 @@ System.InvalidOperationException: The ConnectionString property has not been ini
 2023-11-08 08:55:37.432 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.GoogleSignInAsync (ECommerce.WebApi) in 204.9664ms
 2023-11-08 08:55:37.432 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.GoogleSignInAsync (ECommerce.WebApi)'
 2023-11-08 08:55:37.433 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Authentication/GoogleSignIn?code=4%2F0AfJohXkkJd0aUc5GudM-2aclAfqi5GaMoyGkzJ8e2kBfuVWbQ26tEjACidJfnutcy1MHIA&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=1&prompt=consent - - - 500 - application/json;+charset=utf-8 206.1338ms
+2023-11-08 08:57:57.424 +03:00 [INF] Application is shutting down...

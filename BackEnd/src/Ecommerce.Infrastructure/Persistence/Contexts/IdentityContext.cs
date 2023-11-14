@@ -22,7 +22,7 @@ namespace Infrastructure.Persistence.Contexts
 
             // Ignores
             modelBuilder.Ignore<Order>();
-            modelBuilder.Ignore<OrderItem>();
+            modelBuilder.Ignore<Product>();
 
             base.OnModelCreating(modelBuilder);
         }

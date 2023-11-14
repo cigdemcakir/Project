@@ -1,8 +1,7 @@
 using Application.Common.Interfaces;
-using Application.Features.OrderItems.Commands.Add;
 using FluentValidation;
 
-namespace Application.Features.Orders.Commands.Add;
+namespace Application.Features.Orders.Commands.CreateOrder;
 
 public class OrderAddCommandValidator : AbstractValidator<OrderAddCommand>
 {
@@ -18,5 +17,7 @@ public class OrderAddCommandValidator : AbstractValidator<OrderAddCommand>
         RuleFor(v => v.OrderDate)
             .NotEmpty().WithMessage("Order date is required.")
             .LessThanOrEqualTo(DateTime.UtcNow).WithMessage("Order date cannot be in the future."); 
+        
+        RuleFor(x => x.ProductIds).NotEmpty().WithMessage("Product ID is required.");
     }
 }
