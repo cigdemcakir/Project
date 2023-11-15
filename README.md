@@ -22,6 +22,8 @@ The project incorporates a range of technologies to deliver its functionality:
 
 :small_blue_diamond:**[ASP.NET](http://asp.net/) 7 with Entity Framework Core:** The project utilizes the latest version of ASP.NET 7 and integrates it seamlessly with Entity Framework Core for efficient web development and data access.
 
+:small_blue_diamond:**Real-Time Interactions:** SignalR is in development for instant user notifications, providing an interactive and personalized user experience.
+
 :small_blue_diamond:**Front-End:** React is utilized as the front-end library, enabling the creation of a responsive and interactive user interface. Its component-based architecture allows for efficient rendering and state management across the application.
 
 :small_blue_diamond:**Authentication:** The project incorporates Google Login for authentication, leveraging the widely-used OAuth 2.0 protocol to provide a secure and convenient sign-in process for users. 
@@ -48,7 +50,6 @@ The project is in an advanced stage of development with most features already im
 
 :small_blue_diamond:**Two-Factor Authentication:** OTP.NET and QrCoder are being tested for robust 2FA to enhance account security.
 
-:small_blue_diamond:**Real-Time Interactions:** SignalR is in development for instant user notifications, providing an interactive and personalized user experience.
 
 <br>
 
