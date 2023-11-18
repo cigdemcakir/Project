@@ -43,7 +43,7 @@ const OrdersPage = () => {
                             <Table.Cell>F5D2D884-EDB5-4E5C-A69B-142F888B54C2</Table.Cell>
                             <Table.Cell>2023-11-14 09:38:33.240</Table.Cell>
                         </Table.Row>
-                    
+
                 </Table.Body>
             </Table>
         </div>
