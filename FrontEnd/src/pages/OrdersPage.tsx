@@ -5,27 +5,25 @@ import {Card, Grid, Header, Table} from 'semantic-ui-react';
 const OrdersPage = () => {
     const [orders, setOrders] = useState([]);
 
-    const [orderDetails, setOrderDetails] = useState([]);
-
     useEffect(() => {
-        setOrderDetails([
-            { id: 'F5D2D884-EDB5-4E5C-A69B-142F888B54C2', orderDate: '2023-11-14 09:38:33.240 +0300' }
-        ]);
-    }, []);
-
-    /*useEffect(() => {
         const fetchOrders = async () => {
             try {
                 const response = await axios.get('https://localhost:7109/api/Order/Get');
                 setOrders(response.data);
+                console.log(response);
             } catch (error) {
                 console.error('An error occurred while fetching orders:', error);
             }
         };
 
         fetchOrders();
-    }, []);*/
+    }, []);
 
+
+    const formatDate = (dateString) => {
+        const options = { year: 'numeric', month: 'numeric', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit', timeZone: 'Europe/Istanbul' };
+        return new Date(dateString).toLocaleString('tr-TR', options);
+    };
 
     return (
         <div>
@@ -39,11 +37,12 @@ const OrdersPage = () => {
                 </Table.Header>
 
                 <Table.Body>
-                        <Table.Row>
-                            <Table.Cell>F5D2D884-EDB5-4E5C-A69B-142F888B54C2</Table.Cell>
-                            <Table.Cell>2023-11-14 09:38:33.240</Table.Cell>
+                    {orders.map((order) => (
+                        <Table.Row key={order.id}>
+                            <Table.Cell>{order.userId}</Table.Cell>
+                            <Table.Cell>{formatDate(order.orderDate)}</Table.Cell>
                         </Table.Row>
-
+                    ))}
                 </Table.Body>
             </Table>
         </div>

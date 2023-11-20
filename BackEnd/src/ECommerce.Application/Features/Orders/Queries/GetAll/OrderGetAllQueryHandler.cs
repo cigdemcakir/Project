@@ -22,7 +22,7 @@ namespace Application.Features.Orders.Queries.GetAll
     public async Task<List<OrderGetAllDto>> Handle(OrderGetAllQuery request, CancellationToken cancellationToken)
     {
         var orders = await _applicationDbContext.Orders
-            .Include(order => order.UserId)
+            //.Include(order => order.UserId)
             .Select(order => new OrderGetAllDto
             {
                 UserId = order.UserId,
