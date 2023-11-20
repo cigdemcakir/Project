@@ -1,0 +1,724 @@
+2023-11-20 09:12:16.703 +03:00 [INF] User profile is available. Using '/Users/Levent/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-11-20 09:12:17.406 +03:00 [INF] Now listening on: https://localhost:7109
+2023-11-20 09:12:17.406 +03:00 [INF] Now listening on: http://localhost:5223
+2023-11-20 09:12:17.408 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-20 09:12:17.408 +03:00 [INF] Hosting environment: Development
+2023-11-20 09:12:17.408 +03:00 [INF] Content root path: /Users/Levent/Desktop/Project/BackEnd/src/ECommerce.WebApi
+2023-11-20 09:12:17.818 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/index.html - -
+2023-11-20 09:12:18.023 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/index.html - - - 200 - text/html;charset=utf-8 207.8690ms
+2023-11-20 09:12:18.354 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/v1/swagger.json - -
+2023-11-20 09:12:18.512 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 157.9031ms
+2023-11-20 09:12:29.492 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/api/Authentication/Login - -
+2023-11-20 09:12:29.505 +03:00 [INF] CORS policy execution successful.
+2023-11-20 09:12:29.510 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/api/Authentication/Login - - - 204 - - 18.6047ms
+2023-11-20 09:12:29.512 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/api/Authentication/Login application/json 67
+2023-11-20 09:12:29.515 +03:00 [INF] CORS policy execution successful.
+2023-11-20 09:12:29.572 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi)'
+2023-11-20 09:12:29.594 +03:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginAsync(Application.Features.Auth.Commands.Login.AuthLoginCommand) on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-20 09:12:30.355 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/api/Authentication/Login application/json 67
+2023-11-20 09:12:30.356 +03:00 [INF] CORS policy execution successful.
+2023-11-20 09:12:30.357 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi)'
+2023-11-20 09:12:30.358 +03:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginAsync(Application.Features.Auth.Commands.Login.AuthLoginCommand) on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-20 09:12:31.014 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/api/Authentication/Login application/json 67
+2023-11-20 09:12:31.014 +03:00 [INF] CORS policy execution successful.
+2023-11-20 09:12:31.017 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi)'
+2023-11-20 09:12:31.017 +03:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginAsync(Application.Features.Auth.Commands.Login.AuthLoginCommand) on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-20 09:12:32.255 +03:00 [INF] Executed DbCommand (94ms) [Parameters=[@__email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]
+        WHERE [a].[Email] = @__email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-11-20 09:12:32.255 +03:00 [INF] Executed DbCommand (127ms) [Parameters=[@__email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]
+        WHERE [a].[Email] = @__email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-11-20 09:12:32.255 +03:00 [INF] Executed DbCommand (113ms) [Parameters=[@__email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]
+        WHERE [a].[Email] = @__email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-11-20 09:12:32.465 +03:00 [INF] Executed DbCommand (80ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedByUserId], [a].[CreatedOn], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedByUserId], [a].[ModifiedOn], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-11-20 09:12:32.465 +03:00 [INF] Executed DbCommand (80ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedByUserId], [a].[CreatedOn], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedByUserId], [a].[ModifiedOn], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-11-20 09:12:32.468 +03:00 [INF] Executed DbCommand (84ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedByUserId], [a].[CreatedOn], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedByUserId], [a].[ModifiedOn], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-11-20 09:12:32.634 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Application.Common.Models.Errors.ApiErrorDto'.
+2023-11-20 09:12:32.634 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Application.Common.Models.Errors.ApiErrorDto'.
+2023-11-20 09:12:32.634 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Application.Common.Models.Errors.ApiErrorDto'.
+2023-11-20 09:12:32.650 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi) in 3048.8367ms
+2023-11-20 09:12:32.650 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi) in 2285.4535ms
+2023-11-20 09:12:32.650 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi) in 1626.7756ms
+2023-11-20 09:12:32.652 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi)'
+2023-11-20 09:12:32.652 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi)'
+2023-11-20 09:12:32.652 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi)'
+2023-11-20 09:12:32.686 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7109/api/Authentication/Login application/json 67 - 400 - application/json;+charset=utf-8 3174.0154ms
+2023-11-20 09:12:32.686 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7109/api/Authentication/Login application/json 67 - 400 - application/json;+charset=utf-8 2330.5570ms
+2023-11-20 09:12:32.686 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7109/api/Authentication/Login application/json 67 - 400 - application/json;+charset=utf-8 1671.5146ms
+2023-11-20 09:24:21.140 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/api/Authentication/Login - -
+2023-11-20 09:24:21.142 +03:00 [INF] CORS policy execution successful.
+2023-11-20 09:24:21.142 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/api/Authentication/Login - - - 204 - - 2.6947ms
+2023-11-20 09:24:21.144 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/api/Authentication/Login application/json 67
+2023-11-20 09:24:21.144 +03:00 [INF] CORS policy execution successful.
+2023-11-20 09:24:21.145 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi)'
+2023-11-20 09:24:21.145 +03:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginAsync(Application.Features.Auth.Commands.Login.AuthLoginCommand) on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-20 09:24:21.230 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]
+        WHERE [a].[Email] = @__email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-11-20 09:24:21.235 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedByUserId], [a].[CreatedOn], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedByUserId], [a].[ModifiedOn], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-11-20 09:24:21.240 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Application.Common.Models.Errors.ApiErrorDto'.
+2023-11-20 09:24:21.241 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi) in 95.3864ms
+2023-11-20 09:24:21.241 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi)'
+2023-11-20 09:24:21.242 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7109/api/Authentication/Login application/json 67 - 400 - application/json;+charset=utf-8 98.1608ms
+2023-11-20 09:25:37.811 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/api/Authentication/Login - -
+2023-11-20 09:25:37.812 +03:00 [INF] CORS policy execution successful.
+2023-11-20 09:25:37.812 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/api/Authentication/Login - - - 204 - - 1.1917ms
+2023-11-20 09:25:37.816 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/api/Authentication/Login application/json 67
+2023-11-20 09:25:37.816 +03:00 [INF] CORS policy execution successful.
+2023-11-20 09:25:37.816 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi)'
+2023-11-20 09:25:37.816 +03:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginAsync(Application.Features.Auth.Commands.Login.AuthLoginCommand) on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-20 09:25:37.821 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]
+        WHERE [a].[Email] = @__email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-11-20 09:25:37.825 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedByUserId], [a].[CreatedOn], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedByUserId], [a].[ModifiedOn], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-11-20 09:25:37.827 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Application.Common.Models.Errors.ApiErrorDto'.
+2023-11-20 09:25:37.827 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi) in 10.4838ms
+2023-11-20 09:25:37.827 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi)'
+2023-11-20 09:25:37.828 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7109/api/Authentication/Login application/json 67 - 400 - application/json;+charset=utf-8 11.8859ms
+2023-11-20 09:25:46.766 +03:00 [INF] Application is shutting down...
+2023-11-20 09:25:51.650 +03:00 [INF] User profile is available. Using '/Users/Levent/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-11-20 09:25:52.375 +03:00 [INF] Now listening on: https://localhost:7109
+2023-11-20 09:25:52.375 +03:00 [INF] Now listening on: http://localhost:5223
+2023-11-20 09:25:52.377 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-20 09:25:52.377 +03:00 [INF] Hosting environment: Development
+2023-11-20 09:25:52.377 +03:00 [INF] Content root path: /Users/Levent/Desktop/Project/BackEnd/src/ECommerce.WebApi
+2023-11-20 09:25:52.817 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/index.html - -
+2023-11-20 09:25:53.000 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/index.html - - - 200 - text/html;charset=utf-8 185.8981ms
+2023-11-20 09:25:53.265 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/v1/swagger.json - -
+2023-11-20 09:25:53.449 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 183.6066ms
+2023-11-20 09:25:55.853 +03:00 [INF] Application is shutting down...
+2023-11-20 09:26:34.111 +03:00 [INF] User profile is available. Using '/Users/Levent/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-11-20 09:26:35.035 +03:00 [INF] Now listening on: https://localhost:7109
+2023-11-20 09:26:35.036 +03:00 [INF] Now listening on: http://localhost:5223
+2023-11-20 09:26:35.037 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-20 09:26:35.038 +03:00 [INF] Hosting environment: Development
+2023-11-20 09:26:35.038 +03:00 [INF] Content root path: /Users/Levent/Desktop/Project/BackEnd/src/ECommerce.WebApi
+2023-11-20 09:26:54.199 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/index.html - -
+2023-11-20 09:26:54.512 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/index.html - - - 200 - text/html;charset=utf-8 315.9301ms
+2023-11-20 09:26:54.867 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/v1/swagger.json - -
+2023-11-20 09:26:54.932 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/favicon-32x32.png - -
+2023-11-20 09:26:54.956 +03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-11-20 09:26:54.957 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/favicon-32x32.png - - - 200 628 image/png 24.4488ms
+2023-11-20 09:26:55.171 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 304.3074ms
+2023-11-20 09:27:20.566 +03:00 [INF] User profile is available. Using '/Users/Levent/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-11-20 09:27:21.384 +03:00 [INF] Now listening on: https://localhost:7109
+2023-11-20 09:27:21.384 +03:00 [INF] Now listening on: http://localhost:5223
+2023-11-20 09:27:21.386 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-20 09:27:21.387 +03:00 [INF] Hosting environment: Development
+2023-11-20 09:27:21.387 +03:00 [INF] Content root path: /Users/Levent/Desktop/Project/BackEnd/src/ECommerce.WebApi
+2023-11-20 09:27:24.550 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/index.html - -
+2023-11-20 09:27:24.844 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/index.html - - - 200 - text/html;charset=utf-8 293.9358ms
+2023-11-20 09:27:25.091 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/v1/swagger.json - -
+2023-11-20 09:27:25.321 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 229.7138ms
+2023-11-20 09:29:04.745 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/api/Authentication/Login - -
+2023-11-20 09:29:04.767 +03:00 [INF] CORS policy execution successful.
+2023-11-20 09:29:04.773 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/api/Authentication/Login - - - 204 - - 28.0389ms
+2023-11-20 09:29:04.788 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/api/Authentication/Login application/json 67
+2023-11-20 09:29:04.793 +03:00 [INF] CORS policy execution successful.
+2023-11-20 09:29:04.955 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi)'
+2023-11-20 09:29:04.984 +03:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginAsync(Application.Features.Auth.Commands.Login.AuthLoginCommand) on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-20 09:29:10.210 +03:00 [INF] Executed DbCommand (166ms) [Parameters=[@__email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]
+        WHERE [a].[Email] = @__email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-11-20 09:29:10.540 +03:00 [INF] Executed DbCommand (13ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedByUserId], [a].[CreatedOn], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedByUserId], [a].[ModifiedOn], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-11-20 09:29:10.914 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/api/Authentication/Login - -
+2023-11-20 09:29:10.915 +03:00 [INF] CORS policy execution successful.
+2023-11-20 09:29:11.132 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/api/Authentication/Login - - - 204 - - 217.9947ms
+2023-11-20 09:29:11.147 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/api/Authentication/Login application/json 67
+2023-11-20 09:29:11.148 +03:00 [INF] CORS policy execution successful.
+2023-11-20 09:29:11.151 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi)'
+2023-11-20 09:29:11.152 +03:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginAsync(Application.Features.Auth.Commands.Login.AuthLoginCommand) on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-20 09:29:11.188 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Application.Common.Models.Errors.ApiErrorDto'.
+2023-11-20 09:29:11.224 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi) in 6225.0158ms
+2023-11-20 09:29:11.231 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi)'
+2023-11-20 09:29:11.254 +03:00 [INF] Executed DbCommand (10ms) [Parameters=[@__email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]
+        WHERE [a].[Email] = @__email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-11-20 09:29:11.292 +03:00 [INF] Executed DbCommand (32ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedByUserId], [a].[CreatedOn], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedByUserId], [a].[ModifiedOn], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-11-20 09:29:11.572 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Application.Common.Models.Errors.ApiErrorDto'.
+2023-11-20 09:29:11.573 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi) in 421.2141ms
+2023-11-20 09:29:11.574 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi)'
+2023-11-20 09:29:11.604 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7109/api/Authentication/Login application/json 67 - 400 - application/json;+charset=utf-8 6815.9432ms
+2023-11-20 09:29:11.604 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7109/api/Authentication/Login application/json 67 - 400 - application/json;+charset=utf-8 462.3910ms
+2023-11-20 09:29:45.407 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/api/Authentication/Login - -
+2023-11-20 09:29:45.408 +03:00 [INF] CORS policy execution successful.
+2023-11-20 09:29:45.409 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/api/Authentication/Login - - - 204 - - 6.9347ms
+2023-11-20 09:29:45.425 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/api/Authentication/Login application/json 67
+2023-11-20 09:29:45.431 +03:00 [INF] CORS policy execution successful.
+2023-11-20 09:29:45.433 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi)'
+2023-11-20 09:29:45.433 +03:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginAsync(Application.Features.Auth.Commands.Login.AuthLoginCommand) on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-20 09:29:45.483 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]
+        WHERE [a].[Email] = @__email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-11-20 09:29:45.487 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedByUserId], [a].[CreatedOn], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedByUserId], [a].[ModifiedOn], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-11-20 09:29:45.647 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Application.Common.Models.Errors.ApiErrorDto'.
+2023-11-20 09:29:45.648 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi) in 214.4093ms
+2023-11-20 09:29:45.648 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi)'
+2023-11-20 09:29:45.649 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7109/api/Authentication/Login application/json 67 - 400 - application/json;+charset=utf-8 224.0692ms
+2023-11-20 09:29:47.964 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/api/Authentication/Login application/json 67
+2023-11-20 09:29:47.964 +03:00 [INF] CORS policy execution successful.
+2023-11-20 09:29:47.965 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi)'
+2023-11-20 09:29:47.965 +03:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginAsync(Application.Features.Auth.Commands.Login.AuthLoginCommand) on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-20 09:29:48.028 +03:00 [INF] Executed DbCommand (36ms) [Parameters=[@__email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]
+        WHERE [a].[Email] = @__email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-11-20 09:29:48.034 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedByUserId], [a].[CreatedOn], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedByUserId], [a].[ModifiedOn], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-11-20 09:29:48.190 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Application.Common.Models.Errors.ApiErrorDto'.
+2023-11-20 09:29:48.190 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi) in 225.3343ms
+2023-11-20 09:29:48.191 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi)'
+2023-11-20 09:29:48.191 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7109/api/Authentication/Login application/json 67 - 400 - application/json;+charset=utf-8 226.7404ms
+2023-11-20 09:29:53.108 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/api/Authentication/Login - -
+2023-11-20 09:29:53.108 +03:00 [INF] CORS policy execution successful.
+2023-11-20 09:29:53.109 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/api/Authentication/Login - - - 204 - - 0.5591ms
+2023-11-20 09:29:53.110 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/api/Authentication/Login application/json 67
+2023-11-20 09:29:53.110 +03:00 [INF] CORS policy execution successful.
+2023-11-20 09:29:53.110 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi)'
+2023-11-20 09:29:53.111 +03:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginAsync(Application.Features.Auth.Commands.Login.AuthLoginCommand) on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-20 09:29:53.115 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]
+        WHERE [a].[Email] = @__email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-11-20 09:29:53.143 +03:00 [INF] Executed DbCommand (25ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedByUserId], [a].[CreatedOn], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedByUserId], [a].[ModifiedOn], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-11-20 09:29:53.300 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Application.Common.Models.Errors.ApiErrorDto'.
+2023-11-20 09:29:53.301 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi) in 190.0429ms
+2023-11-20 09:29:53.301 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi)'
+2023-11-20 09:29:53.301 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7109/api/Authentication/Login application/json 67 - 400 - application/json;+charset=utf-8 191.4265ms
+2023-11-20 09:33:32.197 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/api/Authentication/Login - -
+2023-11-20 09:33:32.209 +03:00 [INF] CORS policy execution successful.
+2023-11-20 09:33:32.209 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/api/Authentication/Login - - - 204 - - 12.1658ms
+2023-11-20 09:33:32.210 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/api/Authentication/Login application/json 67
+2023-11-20 09:33:32.211 +03:00 [INF] CORS policy execution successful.
+2023-11-20 09:33:32.211 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi)'
+2023-11-20 09:33:32.211 +03:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginAsync(Application.Features.Auth.Commands.Login.AuthLoginCommand) on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-20 09:33:32.220 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]
+        WHERE [a].[Email] = @__email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-11-20 09:33:32.266 +03:00 [INF] Executed DbCommand (45ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedByUserId], [a].[CreatedOn], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedByUserId], [a].[ModifiedOn], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-11-20 09:33:32.420 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Application.Common.Models.Errors.ApiErrorDto'.
+2023-11-20 09:33:32.421 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi) in 209.0525ms
+2023-11-20 09:33:32.421 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi)'
+2023-11-20 09:33:32.421 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7109/api/Authentication/Login application/json 67 - 400 - application/json;+charset=utf-8 210.6922ms
+2023-11-20 09:40:08.802 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/api/Authentication/Login - -
+2023-11-20 09:40:08.813 +03:00 [INF] CORS policy execution successful.
+2023-11-20 09:40:08.813 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/api/Authentication/Login - - - 204 - - 11.6773ms
+2023-11-20 09:40:08.815 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/api/Authentication/Login application/json 67
+2023-11-20 09:40:08.815 +03:00 [INF] CORS policy execution successful.
+2023-11-20 09:40:08.815 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi)'
+2023-11-20 09:40:08.816 +03:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginAsync(Application.Features.Auth.Commands.Login.AuthLoginCommand) on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-20 09:40:08.903 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]
+        WHERE [a].[Email] = @__email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-11-20 09:40:08.930 +03:00 [INF] Executed DbCommand (25ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedByUserId], [a].[CreatedOn], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedByUserId], [a].[ModifiedOn], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-11-20 09:40:09.084 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Application.Common.Models.Errors.ApiErrorDto'.
+2023-11-20 09:40:09.084 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi) in 268.2387ms
+2023-11-20 09:40:09.084 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi)'
+2023-11-20 09:40:09.084 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7109/api/Authentication/Login application/json 67 - 400 - application/json;+charset=utf-8 269.7586ms
+2023-11-20 09:40:20.604 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/api/Authentication/Login - -
+2023-11-20 09:40:20.604 +03:00 [INF] CORS policy execution successful.
+2023-11-20 09:40:20.605 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/api/Authentication/Login - - - 204 - - 0.5647ms
+2023-11-20 09:40:20.606 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/api/Authentication/Login application/json 67
+2023-11-20 09:40:20.606 +03:00 [INF] CORS policy execution successful.
+2023-11-20 09:40:20.606 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi)'
+2023-11-20 09:40:20.606 +03:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginAsync(Application.Features.Auth.Commands.Login.AuthLoginCommand) on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-20 09:40:20.611 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]
+        WHERE [a].[Email] = @__email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-11-20 09:40:20.617 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedByUserId], [a].[CreatedOn], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedByUserId], [a].[ModifiedOn], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-11-20 09:40:20.779 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Application.Common.Models.Errors.ApiErrorDto'.
+2023-11-20 09:40:20.780 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi) in 173.2888ms
+2023-11-20 09:40:20.780 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi)'
+2023-11-20 09:40:20.781 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7109/api/Authentication/Login application/json 67 - 400 - application/json;+charset=utf-8 174.8517ms
+2023-11-20 09:43:19.094 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/api/Authentication/Register - -
+2023-11-20 09:43:19.106 +03:00 [INF] CORS policy execution successful.
+2023-11-20 09:43:19.106 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/api/Authentication/Register - - - 204 - - 11.9605ms
+2023-11-20 09:43:19.157 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/api/Authentication/Register application/json 105
+2023-11-20 09:43:19.187 +03:00 [INF] CORS policy execution successful.
+2023-11-20 09:43:19.187 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.RegisterAsync (ECommerce.WebApi)'
+2023-11-20 09:43:19.192 +03:00 [INF] Route matched with {action = "Register", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterAsync(Application.Features.Auth.Commands.Register.AuthRegisterCommand) on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-20 09:43:27.282 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]
+        WHERE [a].[Email] = @__email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-11-20 09:43:27.654 +03:00 [INF] Executed DbCommand (27ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedByUserId], [a].[CreatedOn], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedByUserId], [a].[ModifiedOn], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-11-20 09:43:27.697 +03:00 [INF] Executed DbCommand (30ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedByUserId], [a].[CreatedOn], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedByUserId], [a].[ModifiedOn], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-11-20 09:43:28.012 +03:00 [INF] Executed DbCommand (48ms) [Parameters=[@p0='?' (Size = 191), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = DateTimeOffset), @p5='?' (Size = 256), @p6='?' (DbType = Boolean), @p7='?' (Size = 50), @p8='?' (Size = 50), @p9='?' (DbType = Boolean), @p10='?' (DbType = DateTimeOffset), @p11='?' (Size = 4000), @p12='?' (DbType = DateTimeOffset), @p13='?' (Size = 256), @p14='?' (Size = 256), @p15='?' (Size = 4000), @p16='?' (Size = 20), @p17='?' (DbType = Boolean), @p18='?' (Size = 4000), @p19='?' (DbType = Boolean), @p20='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [CreatedByUserId], [CreatedOn], [Email], [EmailConfirmed], [FirstName], [LastName], [LockoutEnabled], [LockoutEnd], [ModifiedByUserId], [ModifiedOn], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20);
+2023-11-20 09:46:00.282 +03:00 [INF] Executing OkObjectResult, writing value of type 'Application.Features.Auth.Commands.Register.AuthRegisterDto'.
+2023-11-20 09:46:00.622 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.RegisterAsync (ECommerce.WebApi) in 161425.6259ms
+2023-11-20 09:46:00.622 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.RegisterAsync (ECommerce.WebApi)'
+2023-11-20 09:46:00.623 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7109/api/Authentication/Register application/json 105 - 200 - application/json;+charset=utf-8 161461.5325ms
+2023-11-20 09:46:00.625 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/api/Authentication/Login - -
+2023-11-20 09:46:00.626 +03:00 [INF] CORS policy execution successful.
+2023-11-20 09:46:00.626 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/api/Authentication/Login - - - 204 - - 0.9757ms
+2023-11-20 09:46:00.628 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/api/Authentication/Login - -
+2023-11-20 09:46:00.629 +03:00 [INF] CORS policy execution successful.
+2023-11-20 09:46:00.629 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/api/Authentication/Login - - - 204 - - 0.5980ms
+2023-11-20 09:46:00.631 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/api/Authentication/Login - -
+2023-11-20 09:46:00.631 +03:00 [INF] CORS policy execution successful.
+2023-11-20 09:46:00.631 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/api/Authentication/Login - - - 204 - - 0.5581ms
+2023-11-20 09:46:00.633 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/api/Authentication/Login - -
+2023-11-20 09:46:00.633 +03:00 [INF] CORS policy execution successful.
+2023-11-20 09:46:00.633 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/api/Authentication/Login - - - 204 - - 0.5127ms
+2023-11-20 09:46:00.634 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/api/Authentication/Login - -
+2023-11-20 09:46:00.635 +03:00 [INF] CORS policy execution successful.
+2023-11-20 09:46:00.635 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/api/Authentication/Login - - - 204 - - 0.5056ms
+2023-11-20 09:46:00.636 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/api/Authentication/Login application/json 61
+2023-11-20 09:46:00.636 +03:00 [INF] CORS policy execution successful.
+2023-11-20 09:46:00.637 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi)'
+2023-11-20 09:46:00.637 +03:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginAsync(Application.Features.Auth.Commands.Login.AuthLoginCommand) on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-20 09:46:05.594 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/api/Authentication/Login application/json 61
+2023-11-20 09:46:05.594 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/api/Authentication/Login application/json 61
+2023-11-20 09:46:05.594 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/api/Authentication/Login application/json 61
+2023-11-20 09:46:05.594 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/api/Authentication/Login application/json 61
+2023-11-20 09:46:05.594 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/api/Authentication/Register application/json 103
+2023-11-20 09:46:05.594 +03:00 [INF] CORS policy execution successful.
+2023-11-20 09:46:05.594 +03:00 [INF] CORS policy execution successful.
+2023-11-20 09:46:05.594 +03:00 [INF] CORS policy execution successful.
+2023-11-20 09:46:05.595 +03:00 [INF] CORS policy execution successful.
+2023-11-20 09:46:05.595 +03:00 [INF] CORS policy execution successful.
+2023-11-20 09:46:05.595 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi)'
+2023-11-20 09:46:05.595 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi)'
+2023-11-20 09:46:05.595 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi)'
+2023-11-20 09:46:05.595 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi)'
+2023-11-20 09:46:05.595 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.RegisterAsync (ECommerce.WebApi)'
+2023-11-20 09:46:05.595 +03:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginAsync(Application.Features.Auth.Commands.Login.AuthLoginCommand) on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-20 09:46:05.595 +03:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginAsync(Application.Features.Auth.Commands.Login.AuthLoginCommand) on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-20 09:46:05.596 +03:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginAsync(Application.Features.Auth.Commands.Login.AuthLoginCommand) on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-20 09:46:05.596 +03:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginAsync(Application.Features.Auth.Commands.Login.AuthLoginCommand) on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-20 09:46:05.596 +03:00 [INF] Route matched with {action = "Register", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterAsync(Application.Features.Auth.Commands.Register.AuthRegisterCommand) on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-20 09:46:05.621 +03:00 [INF] Executed DbCommand (25ms) [Parameters=[@__email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]
+        WHERE [a].[Email] = @__email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-11-20 09:46:21.065 +03:00 [INF] User profile is available. Using '/Users/Levent/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-11-20 09:46:21.844 +03:00 [INF] Now listening on: https://localhost:7109
+2023-11-20 09:46:21.845 +03:00 [INF] Now listening on: http://localhost:5223
+2023-11-20 09:46:21.847 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-20 09:46:21.847 +03:00 [INF] Hosting environment: Development
+2023-11-20 09:46:21.847 +03:00 [INF] Content root path: /Users/Levent/Desktop/Project/BackEnd/src/ECommerce.WebApi
+2023-11-20 09:46:25.393 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/index.html - -
+2023-11-20 09:46:25.635 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/index.html - - - 200 - text/html;charset=utf-8 245.1822ms
+2023-11-20 09:46:25.880 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/v1/swagger.json - -
+2023-11-20 09:46:26.106 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 225.8276ms
+2023-11-20 09:46:45.683 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/api/Authentication/Register application/json 103
+2023-11-20 09:46:45.727 +03:00 [INF] CORS policy execution successful.
+2023-11-20 09:46:45.880 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.RegisterAsync (ECommerce.WebApi)'
+2023-11-20 09:46:45.909 +03:00 [INF] Route matched with {action = "Register", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterAsync(Application.Features.Auth.Commands.Register.AuthRegisterCommand) on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-20 09:46:54.797 +03:00 [INF] User profile is available. Using '/Users/Levent/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2023-11-20 09:46:55.510 +03:00 [INF] Now listening on: https://localhost:7109
+2023-11-20 09:46:55.511 +03:00 [INF] Now listening on: http://localhost:5223
+2023-11-20 09:46:55.512 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-11-20 09:46:55.513 +03:00 [INF] Hosting environment: Development
+2023-11-20 09:46:55.513 +03:00 [INF] Content root path: /Users/Levent/Desktop/Project/BackEnd/src/ECommerce.WebApi
+2023-11-20 09:46:55.995 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/index.html - -
+2023-11-20 09:46:56.180 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/index.html - - - 200 - text/html;charset=utf-8 186.4298ms
+2023-11-20 09:46:56.411 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/swagger/v1/swagger.json - -
+2023-11-20 09:46:56.608 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 197.3405ms
+2023-11-20 09:47:19.339 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/api/Authentication/Register application/json 103
+2023-11-20 09:47:19.355 +03:00 [INF] CORS policy execution successful.
+2023-11-20 09:47:19.411 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.RegisterAsync (ECommerce.WebApi)'
+2023-11-20 09:47:19.435 +03:00 [INF] Route matched with {action = "Register", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterAsync(Application.Features.Auth.Commands.Register.AuthRegisterCommand) on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-20 09:47:22.147 +03:00 [INF] Executed DbCommand (74ms) [Parameters=[@__email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]
+        WHERE [a].[Email] = @__email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-11-20 09:47:22.388 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedByUserId], [a].[CreatedOn], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedByUserId], [a].[ModifiedOn], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-11-20 09:47:22.410 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedByUserId], [a].[CreatedOn], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedByUserId], [a].[ModifiedOn], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-11-20 09:47:22.739 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (Size = 191), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = DateTimeOffset), @p5='?' (Size = 256), @p6='?' (DbType = Boolean), @p7='?' (Size = 50), @p8='?' (Size = 50), @p9='?' (DbType = Boolean), @p10='?' (DbType = DateTimeOffset), @p11='?' (Size = 4000), @p12='?' (DbType = DateTimeOffset), @p13='?' (Size = 256), @p14='?' (Size = 256), @p15='?' (Size = 4000), @p16='?' (Size = 20), @p17='?' (DbType = Boolean), @p18='?' (Size = 4000), @p19='?' (DbType = Boolean), @p20='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [CreatedByUserId], [CreatedOn], [Email], [EmailConfirmed], [FirstName], [LastName], [LockoutEnabled], [LockoutEnd], [ModifiedByUserId], [ModifiedOn], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20);
+2023-11-20 09:47:22.939 +03:00 [INF] Executing OkObjectResult, writing value of type 'Application.Features.Auth.Commands.Register.AuthRegisterDto'.
+2023-11-20 09:47:22.955 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.RegisterAsync (ECommerce.WebApi) in 3514.1957ms
+2023-11-20 09:47:22.958 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.RegisterAsync (ECommerce.WebApi)'
+2023-11-20 09:47:22.990 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7109/api/Authentication/Register application/json 103 - 200 - application/json;+charset=utf-8 3652.1694ms
+2023-11-20 09:47:52.276 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/api/Authentication/Login application/json 55
+2023-11-20 09:47:52.281 +03:00 [INF] CORS policy execution successful.
+2023-11-20 09:47:52.283 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi)'
+2023-11-20 09:47:52.290 +03:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginAsync(Application.Features.Auth.Commands.Login.AuthLoginCommand) on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-20 09:47:52.388 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]
+        WHERE [a].[Email] = @__email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-11-20 09:47:52.395 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedByUserId], [a].[CreatedOn], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedByUserId], [a].[ModifiedOn], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-11-20 09:47:52.584 +03:00 [INF] Executed DbCommand (20ms) [Parameters=[@__user_Id_0='?' (Size = 191)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2023-11-20 09:47:52.631 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__userId_0='?' (Size = 191)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-11-20 09:47:52.649 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-11-20 09:47:52.657 +03:00 [INF] Executing OkObjectResult, writing value of type 'Application.Features.Auth.Commands.Login.AuthLoginDto'.
+2023-11-20 09:47:52.686 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi) in 395.6637ms
+2023-11-20 09:47:52.686 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi)'
+2023-11-20 09:47:52.687 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7109/api/Authentication/Login application/json 55 - 200 - application/json;+charset=utf-8 410.9416ms
+2023-11-20 09:48:18.435 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/api/Authentication/Login - -
+2023-11-20 09:48:18.437 +03:00 [INF] CORS policy execution successful.
+2023-11-20 09:48:18.438 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/api/Authentication/Login - - - 204 - - 2.5427ms
+2023-11-20 09:48:18.440 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/api/Authentication/Login application/json 46
+2023-11-20 09:48:18.440 +03:00 [INF] CORS policy execution successful.
+2023-11-20 09:48:18.441 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi)'
+2023-11-20 09:48:18.442 +03:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginAsync(Application.Features.Auth.Commands.Login.AuthLoginCommand) on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-20 09:48:18.476 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]
+        WHERE [a].[Email] = @__email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-11-20 09:48:18.479 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedByUserId], [a].[CreatedOn], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedByUserId], [a].[ModifiedOn], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-11-20 09:48:18.571 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?' (Size = 191)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2023-11-20 09:48:18.574 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 191)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-11-20 09:48:18.576 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-11-20 09:48:18.577 +03:00 [INF] Executing OkObjectResult, writing value of type 'Application.Features.Auth.Commands.Login.AuthLoginDto'.
+2023-11-20 09:48:18.577 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi) in 134.9156ms
+2023-11-20 09:48:18.577 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi)'
+2023-11-20 09:48:18.577 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7109/api/Authentication/Login application/json 46 - 200 - application/json;+charset=utf-8 137.5257ms
+2023-11-20 09:48:18.651 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/Hubs/OrderHub/negotiate?negotiateVersion=1 - -
+2023-11-20 09:48:18.664 +03:00 [INF] CORS policy execution successful.
+2023-11-20 09:48:18.665 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/Hubs/OrderHub/negotiate?negotiateVersion=1 - - - 204 - - 13.8021ms
+2023-11-20 09:48:18.666 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Product/Pull - -
+2023-11-20 09:48:18.667 +03:00 [INF] CORS policy execution successful.
+2023-11-20 09:48:18.667 +03:00 [INF] Executing endpoint 'WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi)'
+2023-11-20 09:48:18.673 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAsync() on controller WebApi.Controllers.ProductController (ECommerce.WebApi).
+2023-11-20 09:48:18.686 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/Hubs/OrderHub/negotiate?negotiateVersion=1 - 0
+2023-11-20 09:48:18.686 +03:00 [INF] CORS policy execution successful.
+2023-11-20 09:48:18.686 +03:00 [INF] Executing endpoint '/Hubs/OrderHub/negotiate'
+2023-11-20 09:48:18.696 +03:00 [INF] Executed endpoint '/Hubs/OrderHub/negotiate'
+2023-11-20 09:48:18.697 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7109/Hubs/OrderHub/negotiate?negotiateVersion=1 - 0 - 200 316 application/json 10.8610ms
+2023-11-20 09:48:18.718 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/Hubs/OrderHub?id=iR-NP0XB6CFsmgkQgRVRiw - -
+2023-11-20 09:48:18.719 +03:00 [INF] CORS policy execution successful.
+2023-11-20 09:48:18.719 +03:00 [INF] Executing endpoint '/Hubs/OrderHub'
+2023-11-20 09:48:18.816 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Name], [p].[Price], [p].[ImageUrl], [p].[Categories]
+FROM [Products] AS [p]
+ORDER BY [p].[Name]
+2023-11-20 09:48:18.820 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.Features.Products.Queries.GetAll.ProductGetAllDto, ECommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-20 09:48:18.847 +03:00 [INF] Executed action WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi) in 173.9038ms
+2023-11-20 09:48:18.848 +03:00 [INF] Executed endpoint 'WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi)'
+2023-11-20 09:48:18.848 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Product/Pull - - - 200 - application/json;+charset=utf-8 181.8040ms
+2023-11-20 09:48:24.106 +03:00 [INF] Executed endpoint '/Hubs/OrderHub'
+2023-11-20 09:48:24.107 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/Hubs/OrderHub?id=iR-NP0XB6CFsmgkQgRVRiw - - - 101 - - 5388.1273ms
+2023-11-20 10:12:22.514 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/api/Authentication/Login - -
+2023-11-20 10:12:22.519 +03:00 [INF] CORS policy execution successful.
+2023-11-20 10:12:22.521 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/api/Authentication/Login - - - 204 - - 7.2065ms
+2023-11-20 10:12:22.523 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/api/Authentication/Login application/json 67
+2023-11-20 10:12:22.523 +03:00 [INF] CORS policy execution successful.
+2023-11-20 10:12:22.628 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi)'
+2023-11-20 10:12:22.629 +03:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginAsync(Application.Features.Auth.Commands.Login.AuthLoginCommand) on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-20 10:12:22.675 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]
+        WHERE [a].[Email] = @__email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-11-20 10:12:22.680 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedByUserId], [a].[CreatedOn], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedByUserId], [a].[ModifiedOn], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-11-20 10:12:22.701 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Application.Common.Models.Errors.ApiErrorDto'.
+2023-11-20 10:12:22.709 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi) in 79.6605ms
+2023-11-20 10:12:22.709 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi)'
+2023-11-20 10:12:22.710 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7109/api/Authentication/Login application/json 67 - 400 - application/json;+charset=utf-8 187.0615ms
+2023-11-20 10:18:55.347 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/api/Authentication/Register - -
+2023-11-20 10:18:55.348 +03:00 [INF] CORS policy execution successful.
+2023-11-20 10:18:55.348 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/api/Authentication/Register - - - 204 - - 1.5520ms
+2023-11-20 10:18:55.350 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/api/Authentication/Register application/json 89
+2023-11-20 10:18:55.350 +03:00 [INF] CORS policy execution successful.
+2023-11-20 10:18:55.350 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.RegisterAsync (ECommerce.WebApi)'
+2023-11-20 10:18:55.350 +03:00 [INF] Route matched with {action = "Register", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterAsync(Application.Features.Auth.Commands.Register.AuthRegisterCommand) on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-20 10:18:55.363 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]
+        WHERE [a].[Email] = @__email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-11-20 10:18:55.457 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedByUserId], [a].[CreatedOn], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedByUserId], [a].[ModifiedOn], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0
+2023-11-20 10:18:55.460 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedByUserId], [a].[CreatedOn], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedByUserId], [a].[ModifiedOn], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-11-20 10:18:55.476 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (Size = 191), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (DbType = DateTimeOffset), @p5='?' (Size = 256), @p6='?' (DbType = Boolean), @p7='?' (Size = 50), @p8='?' (Size = 50), @p9='?' (DbType = Boolean), @p10='?' (DbType = DateTimeOffset), @p11='?' (Size = 4000), @p12='?' (DbType = DateTimeOffset), @p13='?' (Size = 256), @p14='?' (Size = 256), @p15='?' (Size = 4000), @p16='?' (Size = 20), @p17='?' (DbType = Boolean), @p18='?' (Size = 4000), @p19='?' (DbType = Boolean), @p20='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [CreatedByUserId], [CreatedOn], [Email], [EmailConfirmed], [FirstName], [LastName], [LockoutEnabled], [LockoutEnd], [ModifiedByUserId], [ModifiedOn], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20);
+2023-11-20 10:18:55.479 +03:00 [INF] Executing OkObjectResult, writing value of type 'Application.Features.Auth.Commands.Register.AuthRegisterDto'.
+2023-11-20 10:18:55.479 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.RegisterAsync (ECommerce.WebApi) in 128.9364ms
+2023-11-20 10:18:55.480 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.RegisterAsync (ECommerce.WebApi)'
+2023-11-20 10:18:55.480 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7109/api/Authentication/Register application/json 89 - 200 - application/json;+charset=utf-8 130.0790ms
+2023-11-20 10:21:13.591 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/api/Authentication/Login - -
+2023-11-20 10:21:13.591 +03:00 [INF] CORS policy execution successful.
+2023-11-20 10:21:13.592 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/api/Authentication/Login - - - 204 - - 0.8869ms
+2023-11-20 10:21:13.594 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/api/Authentication/Login application/json 48
+2023-11-20 10:21:13.594 +03:00 [INF] CORS policy execution successful.
+2023-11-20 10:21:13.597 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi)'
+2023-11-20 10:21:13.597 +03:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginAsync(Application.Features.Auth.Commands.Login.AuthLoginCommand) on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-20 10:21:13.603 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]
+        WHERE [a].[Email] = @__email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-11-20 10:21:13.635 +03:00 [INF] Executing BadRequestObjectResult, writing value of type 'Application.Common.Models.Errors.ApiErrorDto'.
+2023-11-20 10:21:13.636 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi) in 38.3879ms
+2023-11-20 10:21:13.636 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi)'
+2023-11-20 10:21:13.636 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7109/api/Authentication/Login application/json 48 - 400 - application/json;+charset=utf-8 42.2802ms
+2023-11-20 10:21:28.160 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/api/Authentication/Login - -
+2023-11-20 10:21:28.160 +03:00 [INF] CORS policy execution successful.
+2023-11-20 10:21:28.161 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/api/Authentication/Login - - - 204 - - 0.5902ms
+2023-11-20 10:21:28.162 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/api/Authentication/Login application/json 46
+2023-11-20 10:21:28.162 +03:00 [INF] CORS policy execution successful.
+2023-11-20 10:21:28.162 +03:00 [INF] Executing endpoint 'WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi)'
+2023-11-20 10:21:28.163 +03:00 [INF] Route matched with {action = "Login", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginAsync(Application.Features.Auth.Commands.Login.AuthLoginCommand) on controller WebApi.Controllers.AuthenticationController (ECommerce.WebApi).
+2023-11-20 10:21:28.167 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__email_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [AspNetUsers] AS [a]
+        WHERE [a].[Email] = @__email_0) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END
+2023-11-20 10:21:28.169 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[CreatedByUserId], [a].[CreatedOn], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[ModifiedByUserId], [a].[ModifiedOn], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2023-11-20 10:21:28.262 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__user_Id_0='?' (Size = 191)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0
+2023-11-20 10:21:28.265 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (Size = 191)], CommandType='"Text"', CommandTimeout='30']
+SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0
+2023-11-20 10:21:28.267 +03:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2023-11-20 10:21:28.267 +03:00 [INF] Executing OkObjectResult, writing value of type 'Application.Features.Auth.Commands.Login.AuthLoginDto'.
+2023-11-20 10:21:28.268 +03:00 [INF] Executed action WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi) in 104.7406ms
+2023-11-20 10:21:28.268 +03:00 [INF] Executed endpoint 'WebApi.Controllers.AuthenticationController.LoginAsync (ECommerce.WebApi)'
+2023-11-20 10:21:28.268 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7109/api/Authentication/Login application/json 46 - 200 - application/json;+charset=utf-8 106.1830ms
+2023-11-20 10:21:28.294 +03:00 [INF] Request starting HTTP/1.1 OPTIONS https://localhost:7109/Hubs/OrderHub/negotiate?negotiateVersion=1 - -
+2023-11-20 10:21:28.294 +03:00 [INF] CORS policy execution successful.
+2023-11-20 10:21:28.295 +03:00 [INF] Request finished HTTP/1.1 OPTIONS https://localhost:7109/Hubs/OrderHub/negotiate?negotiateVersion=1 - - - 204 - - 1.0101ms
+2023-11-20 10:21:28.309 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Product/Pull - -
+2023-11-20 10:21:28.311 +03:00 [INF] CORS policy execution successful.
+2023-11-20 10:21:28.311 +03:00 [INF] Executing endpoint 'WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi)'
+2023-11-20 10:21:28.312 +03:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAsync() on controller WebApi.Controllers.ProductController (ECommerce.WebApi).
+2023-11-20 10:21:28.322 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Name], [p].[Price], [p].[ImageUrl], [p].[Categories]
+FROM [Products] AS [p]
+ORDER BY [p].[Name]
+2023-11-20 10:21:28.323 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Application.Features.Products.Queries.GetAll.ProductGetAllDto, ECommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-11-20 10:21:28.324 +03:00 [INF] Executed action WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi) in 11.5106ms
+2023-11-20 10:21:28.324 +03:00 [INF] Executed endpoint 'WebApi.Controllers.ProductController.GetAllAsync (ECommerce.WebApi)'
+2023-11-20 10:21:28.324 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Product/Pull - - - 200 - application/json;+charset=utf-8 15.1423ms
+2023-11-20 10:21:28.326 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7109/Hubs/OrderHub/negotiate?negotiateVersion=1 - 0
+2023-11-20 10:21:28.326 +03:00 [INF] CORS policy execution successful.
+2023-11-20 10:21:28.327 +03:00 [INF] Executing endpoint '/Hubs/OrderHub/negotiate'
+2023-11-20 10:21:28.329 +03:00 [INF] Executed endpoint '/Hubs/OrderHub/negotiate'
+2023-11-20 10:21:28.329 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7109/Hubs/OrderHub/negotiate?negotiateVersion=1 - 0 - 200 316 application/json 2.9384ms
+2023-11-20 10:21:28.398 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/Hubs/OrderHub?id=g7TificK5rTLivCS-CINgg - -
+2023-11-20 10:21:28.399 +03:00 [INF] CORS policy execution successful.
+2023-11-20 10:21:28.399 +03:00 [INF] Executing endpoint '/Hubs/OrderHub'
+2023-11-20 10:22:53.688 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7109/api/Order/Get - -
+2023-11-20 10:22:53.690 +03:00 [INF] Executing endpoint 'WebApi.Controllers.OrderController.GetAllAsync (ECommerce.WebApi)'
+2023-11-20 10:22:53.695 +03:00 [INF] Route matched with {action = "GetAll", controller = "Order"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAllAsync() on controller WebApi.Controllers.OrderController (ECommerce.WebApi).
+2023-11-20 10:22:53.718 +03:00 [ERR] The expression 'order.UserId' is invalid inside an 'Include' operation, since it does not represent a property access: 't => t.MyProperty'. To target navigations declared on derived types, use casting ('t => ((Derived)t).MyProperty') or the 'as' operator ('t => (t as Derived).MyProperty'). Collection navigation access can be filtered by composing Where, OrderBy(Descending), ThenBy(Descending), Skip or Take operations. For more information on including related data, see http://go.microsoft.com/fwlink/?LinkID=746393.
+System.InvalidOperationException: The expression 'order.UserId' is invalid inside an 'Include' operation, since it does not represent a property access: 't => t.MyProperty'. To target navigations declared on derived types, use casting ('t => ((Derived)t).MyProperty') or the 'as' operator ('t => (t as Derived).MyProperty'). Collection navigation access can be filtered by composing Where, OrderBy(Descending), ThenBy(Descending), Skip or Take operations. For more information on including related data, see http://go.microsoft.com/fwlink/?LinkID=746393.
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.PopulateIncludeTree(IncludeTreeNode includeTreeNode, Expression expression, Boolean setLoaded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.ProcessInclude(NavigationExpansionExpression source, Expression expression, Boolean thenInclude, Boolean setLoaded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.VisitMethodCall(MethodCallExpression methodCallExpression)
+   at Microsoft.EntityFrameworkCore.Query.Internal.NavigationExpandingExpressionVisitor.Expand(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryTranslationPreprocessor.Process(Expression query)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Application.Features.Orders.Queries.GetAll.OrderGetAllQueryHandler.Handle(OrderGetAllQuery request, CancellationToken cancellationToken) in /Users/Levent/Desktop/Project/BackEnd/src/ECommerce.Application/Features/Orders/Queries/GetAll/OrderGetAllQueryHandler.cs:line 24
+   at Application.Common.Behaviours.ValidationBehaviour`2.Handle(TRequest request, RequestHandlerDelegate`1 next, CancellationToken cancellationToken) in /Users/Levent/Desktop/Project/BackEnd/src/ECommerce.Application/Common/Behaviours/ValidationBehaviour.cs:line 35
+   at WebApi.Controllers.OrderController.GetAllAsync() in /Users/Levent/Desktop/Project/BackEnd/src/ECommerce.WebApi/Controllers/OrderController.cs:line 19
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+2023-11-20 10:22:53.748 +03:00 [INF] Executing ObjectResult, writing value of type 'Application.Common.Models.Errors.ApiErrorDto'.
+2023-11-20 10:22:53.748 +03:00 [INF] Executed action WebApi.Controllers.OrderController.GetAllAsync (ECommerce.WebApi) in 53.5106ms
+2023-11-20 10:22:53.749 +03:00 [INF] Executed endpoint 'WebApi.Controllers.OrderController.GetAllAsync (ECommerce.WebApi)'
+2023-11-20 10:22:53.749 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/api/Order/Get - - - 500 - application/json;+charset=utf-8 60.9512ms
+2023-11-20 10:23:15.093 +03:00 [INF] Application is shutting down...
+2023-11-20 10:23:15.099 +03:00 [INF] Executed endpoint '/Hubs/OrderHub'
+2023-11-20 10:23:15.100 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7109/Hubs/OrderHub?id=g7TificK5rTLivCS-CINgg - - - 101 - - 106698.9123ms

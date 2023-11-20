@@ -1,12 +1,13 @@
 import {AuthLoginCommand, LocalJwt} from "../types/AuthTypes.ts";
 import React, {useContext, useState} from "react";
-import {Button, Form, Grid, Header, Icon, Image, Segment} from "semantic-ui-react";
+import {Button, Form, FormInput, Grid, Header, Icon, Image, Segment} from "semantic-ui-react";
 import api from "../utils/axiosInstance.ts";
 import {getClaimsFromJwt} from "../utils/jwtHelper.ts";
 import {toast} from "react-toastify";
 import { useNavigate } from "react-router-dom";
 import logo from '/vite.svg';
-import {AppUserContext} from "../context/StateContext.tsx"; // import your image
+import {AppUserContext} from "../context/StateContext.tsx";
+import axios from "axios";
 
 const BASE_URL = import.meta.env.VITE_API_URL;
 
@@ -16,6 +17,10 @@ function LoginPage() {
     const { setAppUser } = useContext(AppUserContext);
 
     const navigate = useNavigate();
+
+    const [isModalVisible, setIsModalVisible] = useState(false);
+
+    const [registerData, setRegisterData] = useState({ firstName: '', lastName: '', email: '', password: '' });
 
     const [authLoginCommand, setAuthLoginCommand] = useState<AuthLoginCommand>({email:"",password:""});
 
@@ -54,6 +59,30 @@ function LoginPage() {
             toast.error("Something went wrong!");
         }
     }
+
+    const handleRegisterSubmit = async (e) => {
+        e.preventDefault();
+        try {
+            const response = await axios.post('https://localhost:7109/api/Authentication/Register', registerData);
+            if (response.status === 200) {
+                toast.success('Registration Successful!');
+                setIsModalVisible(false);
+            }
+        } catch (error) {
+            toast.error('An error occurred while registering!');
+        }
+    };
+    const handleSignInInputChange = (e) => {
+        setRegisterData({ ...registerData, [e.target.name]: e.target.value });
+    };
+
+    const handleSignInClick = () => {
+        setIsModalVisible(true);
+    };
+
+    const handleCloseModal = () => {
+        setIsModalVisible(false);
+    };
 
     const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setAuthLoginCommand({
@@ -101,11 +130,25 @@ function LoginPage() {
                             Login
                         </Button>
 
+
                         <Button color='purple' fluid onClick={onGoogleLoginClick} size='large' style={{marginTop:"5px"}} type="button">
                             <Icon name='google' /> Sign in with Google
                         </Button>
                     </Segment>
+            </Form>
+                <Button color='teal' size='medium' onClick={handleSignInClick}>Sign In</Button>
+            {isModalVisible && (
+                <Form onSubmit={handleRegisterSubmit}>
+                    <Segment>
+                        <FormInput type="text" name="firstName" placeholder="Ad" onChange={handleSignInInputChange} />
+                        <FormInput type="text" name="lastName" placeholder="Soyad" onChange={handleSignInInputChange} />
+                        <FormInput type="email" name="email" placeholder="E-posta" onChange={handleSignInInputChange} />
+                        <FormInput type="password" name="password" placeholder="Şifre" onChange={handleSignInInputChange} />
+                        <Button color='teal' size='medium' type="submit">Sign In!</Button>
+                        <Button color='teal' size='medium' onClick={handleCloseModal}>Close</Button>
+                    </Segment>
                 </Form>
+            )}
             </Grid.Column>
         </Grid>
     );
